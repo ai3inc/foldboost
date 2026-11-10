@@ -1,0 +1,3639 @@
+{
+ "bootstrap": {
+  "alpha": 0.05,
+  "pairing": "by timed repetition, geometric mean of per-repetition time ratios",
+  "samples": 10000,
+  "seed": 20261109
+ },
+ "coverage": [
+  {
+   "gpu": "H100",
+   "kit": "af2ig",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "af2ig",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "af3_jax",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "af3_jax",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "af3_torch",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "af3_torch",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "atlasfold",
+   "note": "tested inputs only; see scopes",
+   "status": "scoped_evidence"
+  },
+  {
+   "gpu": "B300",
+   "kit": "atlasfold",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "boltz2",
+   "note": "tested inputs only; see scopes",
+   "status": "scoped_evidence"
+  },
+  {
+   "gpu": "B300",
+   "kit": "boltz2",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "boltzgen",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "boltzgen",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "borzoi",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "borzoi",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "caliby",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "caliby",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "chai1",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "chai1",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "chrombpnet",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "chrombpnet",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "colabdesign",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "colabdesign",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "colabfold",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "colabfold",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "complexa",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "complexa",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "e1",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "e1",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "ef2inv",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "ef2inv",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "enformer",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "enformer",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "enformer_deepmind",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "enformer_deepmind",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "esm_if1",
+   "note": "tested inputs only; see scopes",
+   "status": "scoped_evidence"
+  },
+  {
+   "gpu": "B300",
+   "kit": "esm_if1",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "esmc",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "esmc",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "esmfold2",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "esmfold2",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "evo2",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "evo2",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "flashzoi",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "flashzoi",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "genie3",
+   "note": "tested inputs only; see scopes",
+   "status": "scoped_evidence"
+  },
+  {
+   "gpu": "B300",
+   "kit": "genie3",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "gpnstar",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "gpnstar",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "mosaic",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "mosaic",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "opendde",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "opendde",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "openfold3",
+   "note": "tested inputs only; see scopes",
+   "status": "scoped_evidence"
+  },
+  {
+   "gpu": "B300",
+   "kit": "openfold3",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "openfold3_ob0",
+   "note": "tested inputs only; see scopes",
+   "status": "scoped_evidence"
+  },
+  {
+   "gpu": "B300",
+   "kit": "openfold3_ob0",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "progen2",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "progen2",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "proteinmpnn",
+   "note": "tested inputs only; see scopes",
+   "status": "scoped_evidence"
+  },
+  {
+   "gpu": "B300",
+   "kit": "proteinmpnn",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "protenix_v1",
+   "note": "tested inputs only; see scopes",
+   "status": "scoped_evidence"
+  },
+  {
+   "gpu": "B300",
+   "kit": "protenix_v1",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "protenix_v2",
+   "note": "official checkpoint request returned 403; not a driver or kernel limit",
+   "status": "weights_access_blocked"
+  },
+  {
+   "gpu": "B300",
+   "kit": "protenix_v2",
+   "note": "official checkpoint request returned 403; not a driver or kernel limit",
+   "status": "weights_access_blocked"
+  },
+  {
+   "gpu": "H100",
+   "kit": "pxdesign",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "pxdesign",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "rfdiffusion1",
+   "note": "two candidates failed the whole-CLI gate (041, 044); Anthropic stays",
+   "status": "candidate_rejected"
+  },
+  {
+   "gpu": "B300",
+   "kit": "rfdiffusion1",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "rfdiffusion3",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "rfdiffusion3",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "H100",
+   "kit": "rosettafold3",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  },
+  {
+   "gpu": "B300",
+   "kit": "rosettafold3",
+   "note": "no archived three-engine whole-CLI measurement; Anthropic is the default",
+   "status": "not_measured"
+  }
+ ],
+ "default_provider": "anthropic",
+ "families": [
+  {
+   "adapter": "genie3-dispatch-050",
+   "contract": "exact",
+   "decision": {
+    "basis": "same three-way choice at all 5 tested inputs; holdout passed the trimmed-mean rule",
+    "provider": "ours"
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": "3.10.13",
+    "torch": "2.7.1",
+    "triton": "3.3.1"
+   },
+   "evidence": {
+    "discovery_scopes": [
+     "genie3.h100.exact.050.0",
+     "genie3.h100.exact.050.1"
+    ],
+    "holdout": "genie3",
+    "holdout_rule": "trimmed mean ratio > 1 (owner's rule); original rule: failed on at least one input"
+   },
+   "family_id": "genie3.h100.exact.family",
+   "fixed_options": {
+    "batch_size": 1,
+    "det": 1,
+    "n": 2
+   },
+   "free_options": [
+    "seed"
+   ],
+   "gpu": "H100",
+   "kit": "genie3",
+   "require_present": [],
+   "requires": [],
+   "size_hull": [
+    192,
+    288
+   ],
+   "size_measure": "design length",
+   "tested_sizes": [
+    192,
+    224,
+    240,
+    256,
+    288
+   ],
+   "weights": [
+    {
+     "name": "step=600000.ckpt",
+     "sha256": "57039afcd4e5a66e58c52ba1ece256bc311a4294a31c37fca7301dd3a4c4479e",
+     "size": 346849270
+    },
+    {
+     "name": "config.yaml",
+     "sha256": "a01d7ad8b908e4380f45a11c8d691ccf27af3f50a9dfb209823ee99989a343e5",
+     "size": 772
+    }
+   ]
+  },
+  {
+   "adapter": "of3-inline-023",
+   "contract": "fast",
+   "decision": {
+    "basis": "same three-way choice at all 4 tested inputs; holdout passed the trimmed-mean rule",
+    "provider": "ours"
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": null,
+    "torch": "2.10.0",
+    "triton": "3.6.0"
+   },
+   "evidence": {
+    "discovery_scopes": [
+     "openfold3.h100.fast.027.8",
+     "openfold3.h100.fast.027.9"
+    ],
+    "holdout": "openfold3-fast",
+    "holdout_rule": "trimmed mean ratio > 1 (owner's rule); original rule: passed"
+   },
+   "family_id": "openfold3.h100.fast.family",
+   "fixed_options": {
+    "det": 1,
+    "num_diffusion_samples": 1,
+    "use_msa_server": "false",
+    "use_templates": "false"
+   },
+   "free_options": [
+    "runner_yaml_sha256"
+   ],
+   "gpu": "H100",
+   "kit": "openfold3",
+   "require_present": [
+    "runner_yaml_template_seed"
+   ],
+   "requires": [],
+   "size_hull": [
+    304,
+    912
+   ],
+   "size_measure": "polymer tokens",
+   "tested_sizes": [
+    304,
+    608,
+    684,
+    912
+   ],
+   "weights": []
+  },
+  {
+   "adapter": "of3-inline-023",
+   "contract": "exact",
+   "decision": {
+    "basis": "same three-way choice at all 4 tested inputs; holdout passed the trimmed-mean rule",
+    "provider": "ours"
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": null,
+    "torch": "2.10.0",
+    "triton": "3.6.0"
+   },
+   "evidence": {
+    "discovery_scopes": [
+     "openfold3.h100.exact.030.10",
+     "openfold3.h100.exact.030.11"
+    ],
+    "holdout": "openfold3-exact",
+    "holdout_rule": "trimmed mean ratio > 1 (owner's rule); original rule: passed"
+   },
+   "family_id": "openfold3.h100.exact.family",
+   "fixed_options": {
+    "det": 1,
+    "num_diffusion_samples": 1,
+    "use_msa_server": "false",
+    "use_templates": "false"
+   },
+   "free_options": [
+    "runner_yaml_sha256"
+   ],
+   "gpu": "H100",
+   "kit": "openfold3",
+   "require_present": [
+    "runner_yaml_template_seed"
+   ],
+   "requires": [],
+   "size_hull": [
+    304,
+    912
+   ],
+   "size_measure": "polymer tokens",
+   "tested_sizes": [
+    304,
+    760,
+    836,
+    912
+   ],
+   "weights": []
+  },
+  {
+   "adapter": "ob0-inline-021",
+   "contract": "fast",
+   "decision": {
+    "basis": "same three-way choice at all 4 tested inputs; holdout passed the trimmed-mean rule",
+    "provider": "ours"
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": null,
+    "torch": "2.10.0",
+    "triton": "3.6.0"
+   },
+   "evidence": {
+    "discovery_scopes": [
+     "openfold3_ob0.h100.fast.022.6",
+     "openfold3_ob0.h100.fast.022.7"
+    ],
+    "holdout": "openfold3-ob0",
+    "holdout_rule": "trimmed mean ratio > 1 (owner's rule); original rule: passed"
+   },
+   "family_id": "openfold3_ob0.h100.fast.family",
+   "fixed_options": {
+    "det": 1,
+    "num_diffusion_samples": 1,
+    "use_msa_server": "false",
+    "use_templates": "false"
+   },
+   "free_options": [
+    "runner_yaml_sha256"
+   ],
+   "gpu": "H100",
+   "kit": "openfold3_ob0",
+   "require_present": [
+    "runner_yaml_template_seed"
+   ],
+   "requires": [],
+   "size_hull": [
+    228,
+    684
+   ],
+   "size_measure": "polymer tokens",
+   "tested_sizes": [
+    228,
+    456,
+    532,
+    684
+   ],
+   "weights": []
+  },
+  {
+   "adapter": "esmif1-mmap-039",
+   "contract": "fast",
+   "decision": {
+    "basis": "same three-way choice at all 5 tested inputs; holdout passed the trimmed-mean rule",
+    "provider": "ours"
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": "3.11.5",
+    "torch": "2.4.0+cu121",
+    "triton": "3.0.0"
+   },
+   "evidence": {
+    "discovery_scopes": [
+     "esm_if1.h100.fast.039.0",
+     "esm_if1.h100.fast.039.1"
+    ],
+    "holdout": "esm_if1",
+    "holdout_rule": "trimmed mean ratio > 1 (owner's rule); original rule: passed"
+   },
+   "family_id": "esm_if1.h100.fast.family",
+   "fixed_options": {
+    "batch_size": 2,
+    "num_samples": 2
+   },
+   "free_options": [
+    "seed",
+    "chain"
+   ],
+   "gpu": "H100",
+   "kit": "esm_if1",
+   "require_present": [],
+   "requires": [],
+   "size_hull": [
+    76,
+    395
+   ],
+   "size_measure": "chain residues",
+   "tested_sizes": [
+    76,
+    164,
+    247,
+    248,
+    395
+   ],
+   "weights": [
+    {
+     "name": "esm_if1_gvp4_t16_142M_UR50.pt",
+     "sha256": "be4ba36edec22a9bfaa4946ff6b2815f1f19d8a3d7e0eada8b796d5a0eae9fd4",
+     "size": 1700450121
+    }
+   ]
+  },
+  {
+   "adapter": "ptx-cif-040",
+   "contract": "exact",
+   "decision": {
+    "basis": "same three-way choice at all 5 tested inputs; holdout passed the trimmed-mean rule",
+    "provider": "ours"
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": null,
+    "torch": "2.13.0",
+    "triton": "3.7.1"
+   },
+   "evidence": {
+    "discovery_scopes": [
+     "protenix_v1.h100.exact.040.0",
+     "protenix_v1.h100.exact.040.1"
+    ],
+    "holdout": "protenix_v1",
+    "holdout_rule": "trimmed mean ratio > 1 (owner's rule); original rule: passed"
+   },
+   "family_id": "protenix_v1.h100.exact.family",
+   "fixed_options": {
+    "cycle": 10,
+    "det": 1,
+    "sample": 1,
+    "step": 200,
+    "use_msa": "true",
+    "use_template": "false"
+   },
+   "free_options": [
+    "seeds"
+   ],
+   "gpu": "H100",
+   "kit": "protenix_v1",
+   "require_present": [],
+   "requires": [],
+   "size_hull": [
+    199,
+    995
+   ],
+   "size_measure": "polymer tokens",
+   "tested_sizes": [
+    199,
+    398,
+    597,
+    796,
+    995
+   ],
+   "weights": [
+    {
+     "name": "protenix_v1 checkpoint",
+     "sha256": "2b7d5a8b30494514fc47fd2271a16260528cdba170ba09cc112fdecd8f85ec04",
+     "size": null
+    }
+   ]
+  }
+ ],
+ "family_skipped": [
+  {
+   "contract": "exact",
+   "kit": "atlasfold",
+   "reason": "providers differ across tested inputs: ['ours', 'stock']"
+  }
+ ],
+ "policy_sha256": "e60426244027e09e29d3f16c027611429d2df59738779920cdaaf18944db240b",
+ "rejected_candidates": [
+  {
+   "experiments": "011/013",
+   "kit": "protenix_v1/atlasfold",
+   "reason": "K2B candidate inactive: other providers served the attention calls"
+  },
+  {
+   "experiments": "014",
+   "kit": "atlasfold",
+   "reason": "transition operation slower after batch change"
+  },
+  {
+   "experiments": "024/026/028",
+   "kit": "boltz2",
+   "reason": "operation-level gain did not become a whole-CLI gain (0.974/0.985)"
+  },
+  {
+   "experiments": "032/035",
+   "kit": "proteinmpnn",
+   "reason": "lower bound below 1"
+  },
+  {
+   "experiments": "034",
+   "kit": "protenix_v1",
+   "reason": "checkpoint mmap lost at 597 tokens (lower bound 0.915)"
+  },
+  {
+   "experiments": "041/044",
+   "kit": "rfdiffusion1",
+   "reason": "lower bound below 1 after two tries; Anthropic stays"
+  },
+  {
+   "experiments": "042/046",
+   "kit": "genie3",
+   "reason": "lower bound below 1; superseded by 050 for the tested exact scope only"
+  }
+ ],
+ "resident": {
+  "atlasfold": {
+   "exact": {
+    "beats_stock": true,
+    "evidence": "work/holdout/atlasfold-resident: 30 requests, outputs identical to fresh, GPU memory constant, 1.96x (152 tokens), 1.73x (380), 1.62x (456) vs fresh Anthropic exact; launcher via serve_wrapper ENTRY_OVERRIDES (atlasfold_opt.cli:main)",
+    "gpu_names": [
+     "NVIDIA H100 80GB HBM3"
+    ],
+    "status": "supported"
+   }
+  },
+  "boltz2": {
+   "fast": {
+    "evidence": "work/holdout/boltz2-resident: outputs identical, all gates passed; small gain (1.08-1.12x) because boltz2 fast runs the model in a short-lived worker per request",
+    "gpu_names": [
+     "NVIDIA H100 80GB HBM3"
+    ],
+    "status": "supported"
+   }
+  },
+  "boltzgen": {
+   "exact": {
+    "evidence": "work/holdout/wide/boltzgen: resident 0.97x vs fresh Anthropic; the kit runs its pipeline steps as child processes. (Anthropic exact is 1.97x faster than stock.)",
+    "status": "no_benefit"
+   }
+  },
+  "borzoi": {
+   "exact": {
+    "evidence": "borzoi_opt.cli.cmd_sad runs each job in a subprocess, so a resident process saves nothing",
+    "status": "unsupported"
+   }
+  },
+  "colabfold": {
+   "exact": {
+    "evidence": "work/holdout/wide/colabfold: resident 1.05-1.06x vs Anthropic fresh on tiny inputs, inside run-to-run spread; Anthropic exact itself is 0.97-0.99x of stock",
+    "status": "no_benefit"
+   }
+  },
+  "enformer": {
+   "exact": {
+    "evidence": "run.sh has no `exec python -m <pkg>` line to derive a resident launcher from",
+    "status": "unsupported"
+   }
+  },
+  "enformer_deepmind": {
+   "exact": {
+    "evidence": "run.sh has no `exec python -m <pkg>` line to derive a resident launcher from",
+    "status": "unsupported"
+   }
+  },
+  "esm_if1": {
+   "fast": {
+    "evidence": "work/holdout/esm_if1-resident: outputs identical but only 1.02-1.05x; the kit spawns a worker process per request (2.2-2.4 s model load each time)",
+    "status": "no_benefit"
+   }
+  },
+  "evo2": {
+   "exact": {
+    "evidence": "run.sh ends in `python route/evo2_route.py`, not `exec python -m <pkg>`",
+    "status": "unsupported"
+   }
+  },
+  "genie3": {
+   "exact": {
+    "evidence": "work/holdout/wide/genie3-resident: only 1.03-1.05x; the kit starts a driver subprocess per request (genie3_opt/design.py:485), so the resident parent never touches the GPU",
+    "status": "unsupported"
+   }
+  },
+  "gpnstar": {
+   "exact": {
+    "evidence": "work/holdout/wide/gpnstar: outputs identical but latency rose from 8.8 s to 46.8 s over 14 requests and GPU memory grew ~840 MiB per request",
+    "status": "unsupported"
+   }
+  },
+  "openfold3": {
+   "exact": {
+    "beats_stock": true,
+    "evidence": "work/holdout/b300/serve-study-b300 (B300, 1.45-1.58x), serve-b300-adapter, serve-h100-v2 (H100, 1.39-1.49x): 30 requests each, outputs identical to fresh, rc 0; H100 memory creep handled by the server's recycle limit (stress run: restart + fresh fallback, outputs identical)",
+    "gpu_names": [
+     "NVIDIA H100 80GB HBM3",
+     "NVIDIA B300 SXM6 AC"
+    ],
+    "status": "supported"
+   },
+   "fast": {
+    "evidence": "work/holdout/openfold3-resident/fast (H100): 30 requests, outputs identical to fresh, 1.60-1.82x vs fresh Anthropic fast; reserved GPU memory grew ~8 GB over 30 requests, so the server's recycle limit is required. Fast mode is refused by the kit on B300.",
+    "gpu_names": [
+     "NVIDIA H100 80GB HBM3"
+    ],
+    "status": "supported"
+   }
+  },
+  "openfold3_ob0": {
+   "exact": {
+    "evidence": "work/holdout/wide/openfold3_ob0-b300: quick-look, 1.86x (456 tok) and 1.99x (684 tok) vs fresh Anthropic exact, 16/16 outputs identical; GPU memory rose 4.7->12.6 GB over 16 requests, so the recycle limit applies",
+    "gpu_names": [
+     "NVIDIA B300 SXM6 AC"
+    ],
+    "status": "supported"
+   }
+  },
+  "proteinmpnn": {
+   "exact": {
+    "evidence": "work/holdout/wide/proteinmpnn-resident: second request exits 3 'late activation refused ... one mode per process'",
+    "status": "unsupported"
+   }
+  },
+  "protenix_v1": {
+   "exact": {
+    "evidence": "work/holdout/protenix_v1-resident: the first request works, every later one exits 3: 'a second InferenceRunner in one process: the kit binds one model per process'",
+    "status": "unsupported"
+   }
+  },
+  "rfdiffusion1": {
+   "exact": {
+    "evidence": "work/holdout/wide/rfdiffusion1: resident 0.99-1.00x vs fresh exact; the kit starts a driver subprocess per design call. (Anthropic exact is 1.60x and fast 2.24x faster than stock here.)",
+    "status": "no_benefit"
+   }
+  },
+  "rosettafold3": {
+   "exact": {
+    "evidence": "work/holdout/wide/rosettafold3: resident 1.00x; fold.py starts the model with subprocess.run. Outputs are not reproducible even between fresh runs of stock.",
+    "status": "no_benefit"
+   }
+  }
+ },
+ "schema": "flashpair-hybrid-policy/2",
+ "scopes": [
+  {
+   "adapter": "ob0-inline-021",
+   "contract": "fast",
+   "correctness": {
+    "group_members": [
+     "anthropic",
+     "ours"
+    ],
+    "note": "fast scope: stock output differs from the fast modes (or is unseeded); stock is not an eligible provider",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": false
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": []
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": null,
+    "torch": "2.10.0",
+    "triton": "3.6.0"
+   },
+   "evidence": {
+    "analysis": "ob022-analysis.json",
+    "analysis_sha256": "d32b7025dfb128efa3691dc650b65e129fbfa493f0393c7ce6717295b8d7d648",
+    "plan_sha256": "44544311a202420423977367c7bbaa7ca06ad053d0f6735ef03630f3301fdc5e",
+    "raw_manifest": "ob022-raw-manifest.json",
+    "raw_manifest_sha256": "b3b2da9e77beee1dc250ee1d73e1da2e353d9ba28f97547f76c2b174d1a3b5dd"
+   },
+   "example": {
+    "argv": [
+     "pred",
+     "--config",
+     "h100",
+     "--mode",
+     "fast",
+     "--det",
+     "1",
+     "--query-json",
+     "/results/openfold3-ob0-h100-022/input-6.json",
+     "--output-dir",
+     "/results/openfold3-ob0-h100-022/c6-fast-r1-ours",
+     "--use-msa-server",
+     "false",
+     "--use-templates",
+     "false",
+     "--num-diffusion-samples",
+     "1",
+     "--runner-yaml",
+     "/results/openfold3-ob0-h100-022/6-fast-2010013.yaml"
+    ],
+    "input_paths": {
+     "/results/openfold3-ob0-h100-022/6-fast-2010013.yaml": "8e345a3e5a6051165be6b23293c7d54c7a63adc056a23814cc572162a403cdb0",
+     "/results/openfold3-ob0-h100-022/input-6.json": "94323ca1558be49974d45579e2f1186a93d0ae34ea88f587efd2f47278ab6935"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "022",
+   "gpu": "H100",
+   "kit": "openfold3_ob0",
+   "match": {
+    "input_sha256": "94323ca1558be49974d45579e2f1186a93d0ae34ea88f587efd2f47278ab6935",
+    "options": {
+     "det": 1,
+     "num_diffusion_samples": 1,
+     "runner_yaml_sha256": "8e345a3e5a6051165be6b23293c7d54c7a63adc056a23814cc572162a403cdb0",
+     "use_msa_server": "false",
+     "use_templates": "false"
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.7509999806172343,
+     "ratio": 0.7761537191810204
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.247147253373383,
+     "ratio": 1.2884045715263428
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      33.682106,
+      31.389343,
+      33.569167,
+      29.758421,
+      31.456566
+     ],
+     "warmup_seconds": 33.29919
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      26.286451,
+      26.182432,
+      26.253387,
+      22.89823,
+      22.617924
+     ],
+     "warmup_seconds": 62.124855
+    },
+    "stock": {
+     "in_correctness_group": false,
+     "mode": "off",
+     "timed_seconds": [
+      46.949591,
+      44.207936,
+      43.239824,
+      42.911046,
+      43.663295
+     ],
+     "warmup_seconds": 53.182167
+    }
+   },
+   "requires": [],
+   "scope_id": "openfold3_ob0.h100.fast.022.6",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": []
+  },
+  {
+   "adapter": "ob0-inline-021",
+   "contract": "fast",
+   "correctness": {
+    "group_members": [
+     "anthropic",
+     "ours"
+    ],
+    "note": "fast scope: stock output differs from the fast modes (or is unseeded); stock is not an eligible provider",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": false
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": []
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": null,
+    "torch": "2.10.0",
+    "triton": "3.6.0"
+   },
+   "evidence": {
+    "analysis": "ob022-analysis.json",
+    "analysis_sha256": "d32b7025dfb128efa3691dc650b65e129fbfa493f0393c7ce6717295b8d7d648",
+    "plan_sha256": "44544311a202420423977367c7bbaa7ca06ad053d0f6735ef03630f3301fdc5e",
+    "raw_manifest": "ob022-raw-manifest.json",
+    "raw_manifest_sha256": "b3b2da9e77beee1dc250ee1d73e1da2e353d9ba28f97547f76c2b174d1a3b5dd"
+   },
+   "example": {
+    "argv": [
+     "pred",
+     "--config",
+     "h100",
+     "--mode",
+     "fast",
+     "--det",
+     "1",
+     "--query-json",
+     "/results/openfold3-ob0-h100-022/input-7.json",
+     "--output-dir",
+     "/results/openfold3-ob0-h100-022/c7-fast-r1-ours",
+     "--use-msa-server",
+     "false",
+     "--use-templates",
+     "false",
+     "--num-diffusion-samples",
+     "1",
+     "--runner-yaml",
+     "/results/openfold3-ob0-h100-022/7-fast-2010017.yaml"
+    ],
+    "input_paths": {
+     "/results/openfold3-ob0-h100-022/7-fast-2010017.yaml": "01c1b6e5212f70bb567c64582536f6b6a2c2b3920d99526d2d9b282b1cb06d5d",
+     "/results/openfold3-ob0-h100-022/input-7.json": "85515987d69b1e31a3dcfde48ace3bace31f9ad685145bfa7fdb5817eed1fb81"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "022",
+   "gpu": "H100",
+   "kit": "openfold3_ob0",
+   "match": {
+    "input_sha256": "85515987d69b1e31a3dcfde48ace3bace31f9ad685145bfa7fdb5817eed1fb81",
+    "options": {
+     "det": 1,
+     "num_diffusion_samples": 1,
+     "runner_yaml_sha256": "01c1b6e5212f70bb567c64582536f6b6a2c2b3920d99526d2d9b282b1cb06d5d",
+     "use_msa_server": "false",
+     "use_templates": "false"
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.7125036952723774,
+     "ratio": 0.7511192677722526
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.2734071304262657,
+     "ratio": 1.3313464890414857
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      36.957452,
+      33.363852,
+      33.825053,
+      31.892731,
+      30.529815
+     ],
+     "warmup_seconds": 30.626475
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      24.50064,
+      25.577586,
+      27.272566,
+      23.804994,
+      23.864153
+     ],
+     "warmup_seconds": 27.879291
+    },
+    "stock": {
+     "in_correctness_group": false,
+     "mode": "off",
+     "timed_seconds": [
+      46.979145,
+      47.875723,
+      47.825524,
+      45.486031,
+      46.513719
+     ],
+     "warmup_seconds": 50.666694
+    }
+   },
+   "requires": [],
+   "scope_id": "openfold3_ob0.h100.fast.022.7",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": []
+  },
+  {
+   "adapter": "of3-inline-023",
+   "contract": "fast",
+   "correctness": {
+    "group_members": [
+     "anthropic",
+     "ours"
+    ],
+    "note": "fast scope: stock output differs from the fast modes (or is unseeded); stock is not an eligible provider",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": false
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": []
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": null,
+    "torch": "2.10.0",
+    "triton": "3.6.0"
+   },
+   "evidence": {
+    "analysis": "of3027-analysis.json",
+    "analysis_sha256": "62f4277d7f14a24639b93834e001e472c19867da4c418029c99c5fcfa0fc846e",
+    "plan_sha256": "4a037f2abe20cd9527065744ef087555bf26f1f5ae344e4c1a4d3c409ecf0f3d",
+    "raw_manifest": "of3027-raw-manifest.json",
+    "raw_manifest_sha256": "a6a3a97ceeac10ef67b50f246a5f829b7156d8167e831f29b5990bcd94e513c0"
+   },
+   "example": {
+    "argv": [
+     "pred",
+     "--config",
+     "h100",
+     "--mode",
+     "fast",
+     "--det",
+     "1",
+     "--query-json",
+     "/results/openfold3-h100-027/input-8.json",
+     "--output-dir",
+     "/results/openfold3-h100-027/c8-fast-r1-ours",
+     "--use-msa-server",
+     "false",
+     "--use-templates",
+     "false",
+     "--num-diffusion-samples",
+     "1",
+     "--runner-yaml",
+     "/results/openfold3-h100-027/8-fast-2310013.yaml"
+    ],
+    "input_paths": {
+     "/results/openfold3-h100-027/8-fast-2310013.yaml": "02ba6c6abb2758cf5a1a8da7ce93e238da780f09fe797fb1c65823e0d7e3d806",
+     "/results/openfold3-h100-027/input-8.json": "338e3e6c73d9d670b88bc066836507ec264325e949703ea3bae94090d3b414d6"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "027",
+   "gpu": "H100",
+   "kit": "openfold3",
+   "match": {
+    "input_sha256": "338e3e6c73d9d670b88bc066836507ec264325e949703ea3bae94090d3b414d6",
+    "options": {
+     "det": 1,
+     "num_diffusion_samples": 1,
+     "runner_yaml_sha256": "02ba6c6abb2758cf5a1a8da7ce93e238da780f09fe797fb1c65823e0d7e3d806",
+     "use_msa_server": "false",
+     "use_templates": "false"
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.8381601155488737,
+     "ratio": 0.8667224194542611
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.1144996114262493,
+     "ratio": 1.15377193153681
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      27.888218,
+      29.168634,
+      26.846858,
+      28.317977,
+      29.569706
+     ],
+     "warmup_seconds": 61.446716
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      24.894207,
+      24.384848,
+      25.068283,
+      24.197208,
+      24.290223
+     ],
+     "warmup_seconds": 24.497342
+    },
+    "stock": {
+     "in_correctness_group": false,
+     "mode": "off",
+     "timed_seconds": [
+      95.271593,
+      94.027031,
+      94.978589,
+      97.076321,
+      95.507039
+     ],
+     "warmup_seconds": 98.731391
+    }
+   },
+   "requires": [],
+   "scope_id": "openfold3.h100.fast.027.8",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": []
+  },
+  {
+   "adapter": "of3-inline-023",
+   "contract": "fast",
+   "correctness": {
+    "group_members": [
+     "anthropic",
+     "ours"
+    ],
+    "note": "fast scope: stock output differs from the fast modes (or is unseeded); stock is not an eligible provider",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": false
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": []
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": null,
+    "torch": "2.10.0",
+    "triton": "3.6.0"
+   },
+   "evidence": {
+    "analysis": "of3027-analysis.json",
+    "analysis_sha256": "62f4277d7f14a24639b93834e001e472c19867da4c418029c99c5fcfa0fc846e",
+    "plan_sha256": "4a037f2abe20cd9527065744ef087555bf26f1f5ae344e4c1a4d3c409ecf0f3d",
+    "raw_manifest": "of3027-raw-manifest.json",
+    "raw_manifest_sha256": "a6a3a97ceeac10ef67b50f246a5f829b7156d8167e831f29b5990bcd94e513c0"
+   },
+   "example": {
+    "argv": [
+     "pred",
+     "--config",
+     "h100",
+     "--mode",
+     "fast",
+     "--det",
+     "1",
+     "--query-json",
+     "/results/openfold3-h100-027/input-9.json",
+     "--output-dir",
+     "/results/openfold3-h100-027/c9-fast-r1-ours",
+     "--use-msa-server",
+     "false",
+     "--use-templates",
+     "false",
+     "--num-diffusion-samples",
+     "1",
+     "--runner-yaml",
+     "/results/openfold3-h100-027/9-fast-2310017.yaml"
+    ],
+    "input_paths": {
+     "/results/openfold3-h100-027/9-fast-2310017.yaml": "cbcb914f335328f88e4da830bbf74edc862a5ded0d0f89aefffff655ff61e44a",
+     "/results/openfold3-h100-027/input-9.json": "8b2f470b7fde9e174e0a4fec84c0927a987d3ae57a77892b6ab95a6be4d0c586"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "027",
+   "gpu": "H100",
+   "kit": "openfold3",
+   "match": {
+    "input_sha256": "8b2f470b7fde9e174e0a4fec84c0927a987d3ae57a77892b6ab95a6be4d0c586",
+    "options": {
+     "det": 1,
+     "num_diffusion_samples": 1,
+     "runner_yaml_sha256": "cbcb914f335328f88e4da830bbf74edc862a5ded0d0f89aefffff655ff61e44a",
+     "use_msa_server": "false",
+     "use_templates": "false"
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.8810818149859535,
+     "ratio": 0.8912204810717099
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.110163561213792,
+     "ratio": 1.1220567987816894
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      28.187397,
+      29.462232,
+      27.983047,
+      29.707372,
+      27.671998
+     ],
+     "warmup_seconds": 39.011431
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      25.331134,
+      26.012682,
+      25.311649,
+      25.830049,
+      24.932206
+     ],
+     "warmup_seconds": 25.300142
+    },
+    "stock": {
+     "in_correctness_group": false,
+     "mode": "off",
+     "timed_seconds": [
+      96.444036,
+      96.960068,
+      99.798459,
+      95.944257,
+      98.041256
+     ],
+     "warmup_seconds": 98.714609
+    }
+   },
+   "requires": [],
+   "scope_id": "openfold3.h100.fast.027.9",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": []
+  },
+  {
+   "adapter": "of3-inline-023",
+   "contract": "exact",
+   "correctness": {
+    "group_members": [
+     "stock",
+     "anthropic",
+     "ours"
+    ],
+    "note": "exact scopes: all three native outputs identical",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": true
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": [],
+    "stock": [
+     "anthropic",
+     "ours"
+    ]
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": null,
+    "torch": "2.10.0",
+    "triton": "3.6.0"
+   },
+   "evidence": {
+    "analysis": "of3030-analysis.json",
+    "analysis_sha256": "8b39cf28d602f4f792bb83b3a601827b5b84cd5d9ff66a6fc11ca12d8facd984",
+    "plan_sha256": "37581fa7cf32391257284d87bdad7dae75feddc37c405c3dc3c9d342af1a7180",
+    "raw_manifest": "of3030-raw-manifest.json",
+    "raw_manifest_sha256": "c874406c06845651d668b1378f6fcf3b5104a42b8f90d3c448801bc6cacbd44b"
+   },
+   "example": {
+    "argv": [
+     "pred",
+     "--config",
+     "h100",
+     "--mode",
+     "exact",
+     "--det",
+     "1",
+     "--query-json",
+     "/results/openfold3-h100-030/input-10.json",
+     "--output-dir",
+     "/results/openfold3-h100-030/c10-exact-r1-ours",
+     "--use-msa-server",
+     "false",
+     "--use-templates",
+     "false",
+     "--num-diffusion-samples",
+     "1",
+     "--runner-yaml",
+     "/results/openfold3-h100-030/10-exact-3010013.yaml"
+    ],
+    "input_paths": {
+     "/results/openfold3-h100-030/10-exact-3010013.yaml": "2d12ead86b8f8e9970ac43452c98bdbdf7e5f0213341057febde8828edf5c1d5",
+     "/results/openfold3-h100-030/input-10.json": "aea1a4926d35fb1847bc7d323ed04ebca3888115416b8a967ddc251086fe473e"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "030",
+   "gpu": "H100",
+   "kit": "openfold3",
+   "match": {
+    "input_sha256": "aea1a4926d35fb1847bc7d323ed04ebca3888115416b8a967ddc251086fe473e",
+    "options": {
+     "det": 1,
+     "num_diffusion_samples": 1,
+     "runner_yaml_sha256": "2d12ead86b8f8e9970ac43452c98bdbdf7e5f0213341057febde8828edf5c1d5",
+     "use_msa_server": "false",
+     "use_templates": "false"
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.9083231159282525,
+     "ratio": 0.9304504038454938
+    },
+    "anthropic_over_stock": {
+     "lower95": 2.3948017218869584,
+     "ratio": 2.433285322950805
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.047444675028617,
+     "ratio": 1.0747483109976221
+    },
+    "ours_over_stock": {
+     "lower95": 2.5877810996786192,
+     "ratio": 2.615169291016681
+    },
+    "stock_over_anthropic": {
+     "lower95": 0.40404556200067815,
+     "ratio": 0.41096701260965013
+    },
+    "stock_over_ours": {
+     "lower95": 0.3785539229455223,
+     "ratio": 0.38238442284982516
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      34.979239,
+      35.746863,
+      36.249384,
+      36.266527,
+      37.748683
+     ],
+     "warmup_seconds": 37.014018
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      34.367853,
+      33.703719,
+      33.569103,
+      33.240884,
+      33.479604
+     ],
+     "warmup_seconds": 33.406238
+    },
+    "stock": {
+     "in_correctness_group": true,
+     "mode": "off",
+     "timed_seconds": [
+      88.057976,
+      87.776351,
+      87.455528,
+      88.291517,
+      88.688929
+     ],
+     "warmup_seconds": 91.454796
+    }
+   },
+   "requires": [],
+   "scope_id": "openfold3.h100.exact.030.10",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": []
+  },
+  {
+   "adapter": "of3-inline-023",
+   "contract": "exact",
+   "correctness": {
+    "group_members": [
+     "stock",
+     "anthropic",
+     "ours"
+    ],
+    "note": "exact scopes: all three native outputs identical",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": true
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": [],
+    "stock": [
+     "anthropic",
+     "ours"
+    ]
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": null,
+    "torch": "2.10.0",
+    "triton": "3.6.0"
+   },
+   "evidence": {
+    "analysis": "of3030-analysis.json",
+    "analysis_sha256": "8b39cf28d602f4f792bb83b3a601827b5b84cd5d9ff66a6fc11ca12d8facd984",
+    "plan_sha256": "37581fa7cf32391257284d87bdad7dae75feddc37c405c3dc3c9d342af1a7180",
+    "raw_manifest": "of3030-raw-manifest.json",
+    "raw_manifest_sha256": "c874406c06845651d668b1378f6fcf3b5104a42b8f90d3c448801bc6cacbd44b"
+   },
+   "example": {
+    "argv": [
+     "pred",
+     "--config",
+     "h100",
+     "--mode",
+     "exact",
+     "--det",
+     "1",
+     "--query-json",
+     "/results/openfold3-h100-030/input-11.json",
+     "--output-dir",
+     "/results/openfold3-h100-030/c11-exact-r1-ours",
+     "--use-msa-server",
+     "false",
+     "--use-templates",
+     "false",
+     "--num-diffusion-samples",
+     "1",
+     "--runner-yaml",
+     "/results/openfold3-h100-030/11-exact-3010017.yaml"
+    ],
+    "input_paths": {
+     "/results/openfold3-h100-030/11-exact-3010017.yaml": "0b314bd9042c94a8a2ca7dd783acf42a7908b97f98ad50ed425d99b7eaf099bb",
+     "/results/openfold3-h100-030/input-11.json": "dd61037bcdf6c6057a808748465bd95c0330a25452871ca5e8a097647c7afc08"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "030",
+   "gpu": "H100",
+   "kit": "openfold3",
+   "match": {
+    "input_sha256": "dd61037bcdf6c6057a808748465bd95c0330a25452871ca5e8a097647c7afc08",
+    "options": {
+     "det": 1,
+     "num_diffusion_samples": 1,
+     "runner_yaml_sha256": "0b314bd9042c94a8a2ca7dd783acf42a7908b97f98ad50ed425d99b7eaf099bb",
+     "use_msa_server": "false",
+     "use_templates": "false"
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.9421263742637235,
+     "ratio": 0.9530058881078276
+    },
+    "anthropic_over_stock": {
+     "lower95": 2.4293319897293837,
+     "ratio": 2.4568898982265566
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.0373325220530665,
+     "ratio": 1.0493114601689169
+    },
+    "ours_over_stock": {
+     "lower95": 2.5555952568388576,
+     "ratio": 2.5780427265823698
+    },
+    "stock_over_anthropic": {
+     "lower95": 0.4024318964814564,
+     "ratio": 0.4070186461028737
+    },
+    "stock_over_ours": {
+     "lower95": 0.38436762426985965,
+     "ratio": 0.38789116630571474
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      37.347403,
+      38.237875,
+      37.516697,
+      38.295524,
+      38.333315
+     ],
+     "warmup_seconds": 37.888068
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      35.718492,
+      36.51702,
+      36.653181,
+      35.595763,
+      36.331442
+     ],
+     "warmup_seconds": 35.550614
+    },
+    "stock": {
+     "in_correctness_group": true,
+     "mode": "off",
+     "timed_seconds": [
+      93.50492,
+      93.051908,
+      93.627859,
+      92.909793,
+      93.026199
+     ],
+     "warmup_seconds": 93.064579
+    }
+   },
+   "requires": [],
+   "scope_id": "openfold3.h100.exact.030.11",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": []
+  },
+  {
+   "adapter": "boltz-mmap-031",
+   "contract": "fast",
+   "correctness": {
+    "group_members": [
+     "anthropic",
+     "ours"
+    ],
+    "note": "fast scope: stock output differs from the fast modes (or is unseeded); stock is not an eligible provider",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": false
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": []
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": null,
+    "torch": "2.12.0",
+    "triton": "3.7.0"
+   },
+   "evidence": {
+    "analysis": "boltz031-analysis.json",
+    "analysis_sha256": "55514ffbaae04b32455a2b44d0f51cdf4eded4d54b468ce1fe677a60c7cd2735",
+    "plan_sha256": "c685984f90efb5e5426aab2d3a4634909a9f011b441ef8603ea620e69877ee7a",
+    "raw_manifest": "boltz031-raw-manifest.json",
+    "raw_manifest_sha256": "8a20d98d3bb9423929a283ea35ed8b9d5912cbe76a04acbf0759408736573297"
+   },
+   "example": {
+    "argv": [
+     "pred",
+     "--config",
+     "h100",
+     "--mode",
+     "fast",
+     "--input",
+     "/kit/boltz2/inputs/1BRS_a4t2_barnase_trpcage.yaml",
+     "--out_dir",
+     "/results/boltz2-h100-031/c1-fast-r1-ours",
+     "--seeds",
+     "3110013",
+     "--write_full_pae",
+     "--write_full_pde"
+    ],
+    "input_paths": {
+     "/kit/boltz2/inputs/1BRS_a4t2_barnase_trpcage.yaml": "654bd96aba7d0576fea627b51fae7d4b3b5d8fe873712c2cee766fe562a3aa20"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "031",
+   "gpu": "H100",
+   "kit": "boltz2",
+   "match": {
+    "input_sha256": "654bd96aba7d0576fea627b51fae7d4b3b5d8fe873712c2cee766fe562a3aa20",
+    "options": {
+     "seeds": 3110013,
+     "write_full_pae": true,
+     "write_full_pde": true
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.9110385316073967,
+     "ratio": 0.9286900868747238
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.0567534528513969,
+     "ratio": 1.076785478959135
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      22.102527,
+      23.380108,
+      21.954647,
+      22.461462,
+      22.638909
+     ],
+     "warmup_seconds": 22.490125
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      20.851116,
+      20.884074,
+      20.438397,
+      21.639129,
+      20.693376
+     ],
+     "warmup_seconds": 66.052556
+    },
+    "stock": {
+     "in_correctness_group": false,
+     "mode": "off",
+     "timed_seconds": [
+      43.071031,
+      42.515062,
+      43.669932,
+      42.622893,
+      42.847917
+     ],
+     "warmup_seconds": 45.282796
+    }
+   },
+   "requires": [],
+   "scope_id": "boltz2.h100.fast.031.1",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": []
+  },
+  {
+   "adapter": "boltz-mmap-031",
+   "contract": "fast",
+   "correctness": {
+    "group_members": [
+     "anthropic",
+     "ours"
+    ],
+    "note": "fast scope: stock output differs from the fast modes (or is unseeded); stock is not an eligible provider",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": false
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": []
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": null,
+    "torch": "2.12.0",
+    "triton": "3.7.0"
+   },
+   "evidence": {
+    "analysis": "boltz031-analysis.json",
+    "analysis_sha256": "55514ffbaae04b32455a2b44d0f51cdf4eded4d54b468ce1fe677a60c7cd2735",
+    "plan_sha256": "c685984f90efb5e5426aab2d3a4634909a9f011b441ef8603ea620e69877ee7a",
+    "raw_manifest": "boltz031-raw-manifest.json",
+    "raw_manifest_sha256": "8a20d98d3bb9423929a283ea35ed8b9d5912cbe76a04acbf0759408736573297"
+   },
+   "example": {
+    "argv": [
+     "pred",
+     "--config",
+     "h100",
+     "--mode",
+     "fast",
+     "--input",
+     "/kit/boltz2/inputs/1BRS_a2b4_barnase_barstar.yaml",
+     "--out_dir",
+     "/results/boltz2-h100-031/c2-fast-r1-ours",
+     "--seeds",
+     "3110017",
+     "--write_full_pae",
+     "--write_full_pde"
+    ],
+    "input_paths": {
+     "/kit/boltz2/inputs/1BRS_a2b4_barnase_barstar.yaml": "3386f23ddcb7698c6a7b4575e7d026a7ed77e16742ae3840ff621721cf1a7836"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "031",
+   "gpu": "H100",
+   "kit": "boltz2",
+   "match": {
+    "input_sha256": "3386f23ddcb7698c6a7b4575e7d026a7ed77e16742ae3840ff621721cf1a7836",
+    "options": {
+     "seeds": 3110017,
+     "write_full_pae": true,
+     "write_full_pde": true
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.9185036765682238,
+     "ratio": 0.9282534315082676
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.0659768478836325,
+     "ratio": 1.0772920045931373
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      22.998735,
+      23.524848,
+      22.969905,
+      23.140343,
+      23.259975
+     ],
+     "warmup_seconds": 24.834901
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      21.800645,
+      21.354788,
+      21.478519,
+      21.433029,
+      21.510443
+     ],
+     "warmup_seconds": 25.337057
+    },
+    "stock": {
+     "in_correctness_group": false,
+     "mode": "off",
+     "timed_seconds": [
+      44.155314,
+      43.750567,
+      43.374155,
+      43.75476,
+      43.412587
+     ],
+     "warmup_seconds": 44.16303
+    }
+   },
+   "requires": [],
+   "scope_id": "boltz2.h100.fast.031.2",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": []
+  },
+  {
+   "adapter": "mpnn-triton-key-036",
+   "contract": "exact",
+   "correctness": {
+    "group_members": [
+     "stock",
+     "anthropic",
+     "ours"
+    ],
+    "note": "exact scopes: all three native outputs identical",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": true
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": [],
+    "stock": [
+     "anthropic",
+     "ours"
+    ]
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": "3.11.5",
+    "torch": "2.5.1+cu124",
+    "triton": "3.1.0"
+   },
+   "evidence": {
+    "analysis": "mpnn036-analysis.json",
+    "analysis_sha256": "0ba3843ea7696c79878c26b58b2f506cc662a6b0449d8458cdc7bb843d6ef76a",
+    "plan_sha256": "ce9c233d768101df8a5f94676e0246b0d89c86ed8fb88067ba1f5ccfb1ff758c",
+    "raw_manifest": "mpnn036-raw-manifest.json",
+    "raw_manifest_sha256": "edf6d725b417c11d84f0a2609fa08e40032cd4e7c0b9f4b0283befa945c04842"
+   },
+   "example": {
+    "argv": [
+     "design",
+     "--config",
+     "h100",
+     "--mode",
+     "exact",
+     "--input",
+     "/opt/ProteinMPNN/inputs/PDB_complexes/pdbs",
+     "--out",
+     "/results/proteinmpnn-h100-036/c0-r1-ours",
+     "--seed",
+     "3610013",
+     "--num_seq_per_target",
+     "8",
+     "--batch_size",
+     "8",
+     "--save_score",
+     "1",
+     "--save_probs",
+     "0"
+    ],
+    "input_paths": {
+     "/opt/ProteinMPNN/inputs/PDB_complexes/pdbs": "6a5470fa1213a93c35b52c1e4565dc79305ca01d785960366965b1f0b4042a8a"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "036",
+   "gpu": "H100",
+   "kit": "proteinmpnn",
+   "match": {
+    "input_sha256": "6a5470fa1213a93c35b52c1e4565dc79305ca01d785960366965b1f0b4042a8a",
+    "options": {
+     "batch_size": 8,
+     "num_seq_per_target": 8,
+     "save_probs": 0,
+     "save_score": 1,
+     "seed": 3610013
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.903850865182744,
+     "ratio": 0.9223152811358792
+    },
+    "anthropic_over_stock": {
+     "lower95": 1.7243986084392484,
+     "ratio": 1.7361633228155295
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.0626510898971526,
+     "ratio": 1.0842279429312371
+    },
+    "ours_over_stock": {
+     "lower95": 1.853732565151827,
+     "ratio": 1.8823967880889432
+    },
+    "stock_over_anthropic": {
+     "lower95": 0.5714319432846005,
+     "ratio": 0.5759826779304977
+    },
+    "stock_over_ours": {
+     "lower95": 0.5219161282657788,
+     "ratio": 0.5312376255248636
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      3.539167,
+      3.495732,
+      3.433025,
+      3.509207,
+      3.421178
+     ],
+     "warmup_seconds": 3.831662
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      3.249007,
+      3.163789,
+      3.238659,
+      3.120805,
+      3.275727
+     ],
+     "warmup_seconds": 3.462742
+    },
+    "stock": {
+     "in_correctness_group": true,
+     "mode": "off",
+     "timed_seconds": [
+      6.096709,
+      6.012854,
+      5.947917,
+      6.094294,
+      6.053257
+     ],
+     "warmup_seconds": 6.005556
+    }
+   },
+   "requires": [
+    "warm_fingerprint_cache"
+   ],
+   "scope_id": "proteinmpnn.h100.exact.036.0",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": []
+  },
+  {
+   "adapter": "mpnn-triton-key-036",
+   "contract": "exact",
+   "correctness": {
+    "group_members": [
+     "stock",
+     "anthropic",
+     "ours"
+    ],
+    "note": "exact scopes: all three native outputs identical",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": true
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": [],
+    "stock": [
+     "anthropic",
+     "ours"
+    ]
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": "3.11.5",
+    "torch": "2.5.1+cu124",
+    "triton": "3.1.0"
+   },
+   "evidence": {
+    "analysis": "mpnn036-analysis.json",
+    "analysis_sha256": "0ba3843ea7696c79878c26b58b2f506cc662a6b0449d8458cdc7bb843d6ef76a",
+    "plan_sha256": "ce9c233d768101df8a5f94676e0246b0d89c86ed8fb88067ba1f5ccfb1ff758c",
+    "raw_manifest": "mpnn036-raw-manifest.json",
+    "raw_manifest_sha256": "edf6d725b417c11d84f0a2609fa08e40032cd4e7c0b9f4b0283befa945c04842"
+   },
+   "example": {
+    "argv": [
+     "design",
+     "--config",
+     "h100",
+     "--mode",
+     "exact",
+     "--input",
+     "/opt/ProteinMPNN/inputs/PDB_complexes/pdbs",
+     "--out",
+     "/results/proteinmpnn-h100-036/c1-r1-ours",
+     "--seed",
+     "3610017",
+     "--num_seq_per_target",
+     "16",
+     "--batch_size",
+     "8",
+     "--save_score",
+     "1",
+     "--save_probs",
+     "0"
+    ],
+    "input_paths": {
+     "/opt/ProteinMPNN/inputs/PDB_complexes/pdbs": "6a5470fa1213a93c35b52c1e4565dc79305ca01d785960366965b1f0b4042a8a"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "036",
+   "gpu": "H100",
+   "kit": "proteinmpnn",
+   "match": {
+    "input_sha256": "6a5470fa1213a93c35b52c1e4565dc79305ca01d785960366965b1f0b4042a8a",
+    "options": {
+     "batch_size": 8,
+     "num_seq_per_target": 16,
+     "save_probs": 0,
+     "save_score": 1,
+     "seed": 3610017
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.9148502341758397,
+     "ratio": 0.9383102485784242
+    },
+    "anthropic_over_stock": {
+     "lower95": 2.0149381528405366,
+     "ratio": 2.0465717185878525
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.0210237340034394,
+     "ratio": 1.06574557990285
+    },
+    "ours_over_stock": {
+     "lower95": 2.1210212262070445,
+     "ratio": 2.181124763039184
+    },
+    "stock_over_anthropic": {
+     "lower95": 0.48139489933894203,
+     "ratio": 0.4886220164764156
+    },
+    "stock_over_ours": {
+     "lower95": 0.4476898240165076,
+     "ratio": 0.4584790457408764
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      3.83148,
+      3.896186,
+      3.820293,
+      3.801013,
+      3.863675
+     ],
+     "warmup_seconds": 3.768061
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      3.526527,
+      3.549439,
+      3.922404,
+      3.513512,
+      3.531299
+     ],
+     "warmup_seconds": 3.51423
+    },
+    "stock": {
+     "in_correctness_group": true,
+     "mode": "off",
+     "timed_seconds": [
+      7.842709,
+      7.762839,
+      8.009126,
+      7.966159,
+      7.741352
+     ],
+     "warmup_seconds": 7.829094
+    }
+   },
+   "requires": [
+    "warm_fingerprint_cache"
+   ],
+   "scope_id": "proteinmpnn.h100.exact.036.1",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": []
+  },
+  {
+   "adapter": "atlas-mmap-037",
+   "contract": "exact",
+   "correctness": {
+    "group_members": [
+     "stock",
+     "anthropic",
+     "ours"
+    ],
+    "note": "exact scopes: all three native outputs identical",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": true
+   },
+   "decision": {
+    "provider": "stock",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "stock",
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours",
+     "stock"
+    ],
+    "ours": [],
+    "stock": []
+   },
+   "environment": {
+    "env_fixed": {
+     "MKL_NUM_THREADS": "4",
+     "OMP_NUM_THREADS": "4",
+     "OPENBLAS_NUM_THREADS": "4"
+    },
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": "3.11.5",
+    "torch": "2.7.1+cu128",
+    "triton": "3.3.1"
+   },
+   "evidence": {
+    "analysis": "atlas037-analysis.json",
+    "analysis_sha256": "7cf14814c2fd62fc834a2223213e44996ed45458e2e6590762a6c17ec2f7f972",
+    "plan_sha256": "0ff110c1b89b76df5bc3c10f37716d10ca3b26fef9507885bbd8be58c1e13866",
+    "raw_manifest": "atlas037-raw-manifest.json",
+    "raw_manifest_sha256": "b16cc354d4c3da06fbaa19a53b202b96babf01278dfc8cfa48df8898079c3f3f"
+   },
+   "example": {
+    "argv": [
+     "pred",
+     "--config",
+     "h100",
+     "--mode",
+     "exact",
+     "--det",
+     "1",
+     "--",
+     "monomer",
+     "--input-fasta",
+     "/code/ubiquitin-228.fasta",
+     "--out-dir",
+     "/results/atlasfold-h100-037/n228-exact-r1-ours",
+     "--seed",
+     "3710013",
+     "--save-confidence-arrays",
+     "--save-distogram"
+    ],
+    "input_paths": {
+     "/code/ubiquitin-228.fasta": "336ad7c91fc15b1bf80cd5e996a20133cbd926974e6c91dff6d43f8bbbfac2df"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "037",
+   "gpu": "H100",
+   "kit": "atlasfold",
+   "match": {
+    "input_sha256": "336ad7c91fc15b1bf80cd5e996a20133cbd926974e6c91dff6d43f8bbbfac2df",
+    "options": {
+     "det": 1,
+     "positional": [
+      "monomer"
+     ],
+     "save_confidence_arrays": true,
+     "save_distogram": true,
+     "seed": 3710013
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.8462554164765898,
+     "ratio": 0.8654626594213751
+    },
+    "anthropic_over_stock": {
+     "lower95": 0.8642255631170416,
+     "ratio": 0.8756095172809051
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.1289460684863,
+     "ratio": 1.1554513520763252
+    },
+    "ours_over_stock": {
+     "lower95": 0.9939855044955699,
+     "ratio": 1.0117242006331202
+    },
+    "stock_over_anthropic": {
+     "lower95": 1.1256312043426853,
+     "ratio": 1.1420615928266447
+    },
+    "stock_over_ours": {
+     "lower95": 0.9689525946004759,
+     "ratio": 0.9884116633507596
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      16.297452,
+      15.998049,
+      15.667462,
+      15.61239,
+      15.340325
+     ],
+     "warmup_seconds": 18.69311
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      13.44654,
+      13.85991,
+      13.440479,
+      13.500001,
+      14.047901
+     ],
+     "warmup_seconds": 13.075003
+    },
+    "stock": {
+     "in_correctness_group": true,
+     "mode": "off",
+     "timed_seconds": [
+      14.199688,
+      13.706332,
+      13.55525,
+      13.782654,
+      13.848452
+     ],
+     "warmup_seconds": 14.312258
+    }
+   },
+   "requires": [],
+   "scope_id": "atlasfold.h100.exact.037.228",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": []
+  },
+  {
+   "adapter": "atlas-mmap-037",
+   "contract": "exact",
+   "correctness": {
+    "group_members": [
+     "stock",
+     "anthropic",
+     "ours"
+    ],
+    "note": "exact scopes: all three native outputs identical",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": true
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours",
+     "stock"
+    ],
+    "ours": [],
+    "stock": [
+     "ours"
+    ]
+   },
+   "environment": {
+    "env_fixed": {
+     "MKL_NUM_THREADS": "4",
+     "OMP_NUM_THREADS": "4",
+     "OPENBLAS_NUM_THREADS": "4"
+    },
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": "3.11.5",
+    "torch": "2.7.1+cu128",
+    "triton": "3.3.1"
+   },
+   "evidence": {
+    "analysis": "atlas037-analysis.json",
+    "analysis_sha256": "7cf14814c2fd62fc834a2223213e44996ed45458e2e6590762a6c17ec2f7f972",
+    "plan_sha256": "0ff110c1b89b76df5bc3c10f37716d10ca3b26fef9507885bbd8be58c1e13866",
+    "raw_manifest": "atlas037-raw-manifest.json",
+    "raw_manifest_sha256": "b16cc354d4c3da06fbaa19a53b202b96babf01278dfc8cfa48df8898079c3f3f"
+   },
+   "example": {
+    "argv": [
+     "pred",
+     "--config",
+     "h100",
+     "--mode",
+     "exact",
+     "--det",
+     "1",
+     "--",
+     "monomer",
+     "--input-fasta",
+     "/code/ubiquitin-304.fasta",
+     "--out-dir",
+     "/results/atlasfold-h100-037/n304-exact-r1-ours",
+     "--seed",
+     "3710017",
+     "--save-confidence-arrays",
+     "--save-distogram"
+    ],
+    "input_paths": {
+     "/code/ubiquitin-304.fasta": "233d52de872c1f1f2755c8398f7c2388a59aaaa43fe0cc8dbd11953c617acc92"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "037",
+   "gpu": "H100",
+   "kit": "atlasfold",
+   "match": {
+    "input_sha256": "233d52de872c1f1f2755c8398f7c2388a59aaaa43fe0cc8dbd11953c617acc92",
+    "options": {
+     "det": 1,
+     "positional": [
+      "monomer"
+     ],
+     "save_confidence_arrays": true,
+     "save_distogram": true,
+     "seed": 3710017
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.871466271759386,
+     "ratio": 0.8799324751657575
+    },
+    "anthropic_over_stock": {
+     "lower95": 0.9160188953306228,
+     "ratio": 0.9263271812967356
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.1247398579088355,
+     "ratio": 1.1364508393801749
+    },
+    "ours_over_stock": {
+     "lower95": 1.0484314191097062,
+     "ratio": 1.0527253027253465
+    },
+    "stock_over_anthropic": {
+     "lower95": 1.0666756792396779,
+     "ratio": 1.0795321784686618
+    },
+    "stock_over_ours": {
+     "lower95": 0.946942128479207,
+     "ratio": 0.9499154218210119
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      16.724752,
+      16.352125,
+      16.36621,
+      16.885657,
+      16.895999
+     ],
+     "warmup_seconds": 16.713458
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      14.483347,
+      14.562905,
+      14.671244,
+      14.825571,
+      14.683691
+     ],
+     "warmup_seconds": 16.034306
+    },
+    "stock": {
+     "in_correctness_group": true,
+     "mode": "off",
+     "timed_seconds": [
+      15.255522,
+      15.400334,
+      15.453235,
+      15.464877,
+      15.512534
+     ],
+     "warmup_seconds": 15.723807
+    }
+   },
+   "requires": [],
+   "scope_id": "atlasfold.h100.exact.037.304",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": []
+  },
+  {
+   "adapter": "esmif1-mmap-039",
+   "contract": "fast",
+   "correctness": {
+    "group_members": [
+     "anthropic",
+     "ours"
+    ],
+    "note": "fast scope: stock output differs from the fast modes (or is unseeded); stock is not an eligible provider",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": false
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": []
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": "3.11.5",
+    "torch": "2.4.0+cu121",
+    "triton": "3.0.0"
+   },
+   "evidence": {
+    "analysis": "esm039-analysis.json",
+    "analysis_sha256": "68f323fe9d3d6c408dd6ac676a92893338a97a8b3f953e14e953fbe1d21e0fd6",
+    "plan_sha256": "a16b86fd737a593c5635d53ab80114e68551189aa6b9e5cc09c3d721b615af3d",
+    "raw_manifest": "esm039-raw-manifest.json",
+    "raw_manifest_sha256": "a21f62550c876e023ebcf0817ca366fb97820505beaf850222ea41e2eec334bd"
+   },
+   "example": {
+    "argv": [
+     "design",
+     "--config",
+     "h100",
+     "--mode",
+     "fast",
+     "/code/4uv3.pdb",
+     "--chain",
+     "A",
+     "--num-samples",
+     "2",
+     "--outpath",
+     "/results/esm-if1-h100-039/c0-r1-ours/samples.fasta",
+     "--seed",
+     "3910013",
+     "--batch_size",
+     "2"
+    ],
+    "input_paths": {
+     "/code/4uv3.pdb": "0181a86741e2a9b88e709105182592ebc9c40f842af158d9a7310f799f75e3ae"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "039",
+   "gpu": "H100",
+   "kit": "esm_if1",
+   "match": {
+    "input_sha256": "0181a86741e2a9b88e709105182592ebc9c40f842af158d9a7310f799f75e3ae",
+    "options": {
+     "batch_size": 2,
+     "chain": "A",
+     "num_samples": 2,
+     "seed": 3910013
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.8713210404332354,
+     "ratio": 0.8776622587761675
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.1273392257094679,
+     "ratio": 1.1393904545860534
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      7.225654,
+      7.188951,
+      7.204369,
+      7.165457,
+      7.311701
+     ],
+     "warmup_seconds": 7.115949
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      6.304869,
+      6.453196,
+      6.308497,
+      6.268464,
+      6.345999
+     ],
+     "warmup_seconds": 6.242342
+    },
+    "stock": {
+     "in_correctness_group": false,
+     "mode": "off",
+     "timed_seconds": [
+      9.210014,
+      9.224093,
+      9.267327,
+      9.197978,
+      9.244378
+     ],
+     "warmup_seconds": 9.266456
+    }
+   },
+   "requires": [],
+   "scope_id": "esm_if1.h100.fast.039.0",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": [
+    {
+     "name": "esm_if1_gvp4_t16_142M_UR50.pt",
+     "sha256": "be4ba36edec22a9bfaa4946ff6b2815f1f19d8a3d7e0eada8b796d5a0eae9fd4",
+     "size": 1700450121
+    }
+   ]
+  },
+  {
+   "adapter": "esmif1-mmap-039",
+   "contract": "fast",
+   "correctness": {
+    "group_members": [
+     "anthropic",
+     "ours"
+    ],
+    "note": "fast scope: stock output differs from the fast modes (or is unseeded); stock is not an eligible provider",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": false
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": []
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": "3.11.5",
+    "torch": "2.4.0+cu121",
+    "triton": "3.0.0"
+   },
+   "evidence": {
+    "analysis": "esm039-analysis.json",
+    "analysis_sha256": "68f323fe9d3d6c408dd6ac676a92893338a97a8b3f953e14e953fbe1d21e0fd6",
+    "plan_sha256": "a16b86fd737a593c5635d53ab80114e68551189aa6b9e5cc09c3d721b615af3d",
+    "raw_manifest": "esm039-raw-manifest.json",
+    "raw_manifest_sha256": "a21f62550c876e023ebcf0817ca366fb97820505beaf850222ea41e2eec334bd"
+   },
+   "example": {
+    "argv": [
+     "design",
+     "--config",
+     "h100",
+     "--mode",
+     "fast",
+     "/code/5YH2.pdb",
+     "--chain",
+     "C",
+     "--num-samples",
+     "2",
+     "--outpath",
+     "/results/esm-if1-h100-039/c1-r1-ours/samples.fasta",
+     "--seed",
+     "3910017",
+     "--batch_size",
+     "2"
+    ],
+    "input_paths": {
+     "/code/5YH2.pdb": "7bb69607bc8627a2f8424c4b228db709a97bbac58ce73a8d6040973e5674942a"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "039",
+   "gpu": "H100",
+   "kit": "esm_if1",
+   "match": {
+    "input_sha256": "7bb69607bc8627a2f8424c4b228db709a97bbac58ce73a8d6040973e5674942a",
+    "options": {
+     "batch_size": 2,
+     "chain": "C",
+     "num_samples": 2,
+     "seed": 3910017
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.8826162642321362,
+     "ratio": 0.9037364189520768
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.0705452446743833,
+     "ratio": 1.106517319684367
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      7.693848,
+      7.689545,
+      7.727239,
+      7.682353,
+      7.665053
+     ],
+     "warmup_seconds": 7.683403
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "fast",
+     "timed_seconds": [
+      7.470707,
+      6.775625,
+      6.812338,
+      6.94274,
+      6.778736
+     ],
+     "warmup_seconds": 6.824505
+    },
+    "stock": {
+     "in_correctness_group": false,
+     "mode": "off",
+     "timed_seconds": [
+      11.333778,
+      11.352324,
+      11.302472,
+      11.274633,
+      11.558767
+     ],
+     "warmup_seconds": 11.309562
+    }
+   },
+   "requires": [],
+   "scope_id": "esm_if1.h100.fast.039.1",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": [
+    {
+     "name": "esm_if1_gvp4_t16_142M_UR50.pt",
+     "sha256": "be4ba36edec22a9bfaa4946ff6b2815f1f19d8a3d7e0eada8b796d5a0eae9fd4",
+     "size": 1700450121
+    }
+   ]
+  },
+  {
+   "adapter": "ptx-cif-040",
+   "contract": "exact",
+   "correctness": {
+    "group_members": [
+     "stock",
+     "anthropic",
+     "ours"
+    ],
+    "note": "exact scopes: all three native outputs identical",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": true
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": [],
+    "stock": [
+     "anthropic",
+     "ours"
+    ]
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": null,
+    "torch": "2.13.0",
+    "triton": "3.7.1"
+   },
+   "evidence": {
+    "analysis": "ptx040-analysis.json",
+    "analysis_sha256": "6cf72117d15ac4da3d7390c0afc6a468ba1d25a7117d31f760fab79c84cc2f2c",
+    "plan_sha256": "874dca257296c4f5eadf11d7180a79826cc27ebe73af50d66f7d3e7921de7d92",
+    "raw_manifest": "ptx040-raw-manifest.json",
+    "raw_manifest_sha256": "009952477ccc65d5656d1bc199972d51cee26aeef08040f72859b601f3456ae9"
+   },
+   "example": {
+    "argv": [
+     "pred",
+     "--config",
+     "h100",
+     "--mode",
+     "exact",
+     "--det",
+     "1",
+     "--input",
+     "/results/protenix-v1-h100-040/c0-r1-ours-input.json",
+     "--out_dir",
+     "/results/protenix-v1-h100-040/c0-r1-ours",
+     "--seeds",
+     "4010013",
+     "--sample",
+     "1",
+     "--cycle",
+     "10",
+     "--step",
+     "200",
+     "--use_msa",
+     "true",
+     "--use_template",
+     "false"
+    ],
+    "input_paths": {
+     "/results/protenix-v1-h100-040/c0-r1-ours-input.json": "0ac62c57a2e2056c0bd69e04270b2fe9250b677c7266db611ba1676faff40244"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "040",
+   "gpu": "H100",
+   "kit": "protenix_v1",
+   "match": {
+    "input_sha256": "0ac62c57a2e2056c0bd69e04270b2fe9250b677c7266db611ba1676faff40244",
+    "options": {
+     "cycle": 10,
+     "det": 1,
+     "sample": 1,
+     "seeds": 4010013,
+     "step": 200,
+     "use_msa": "true",
+     "use_template": "false"
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.9499779654913523,
+     "ratio": 0.9666684479639701
+    },
+    "anthropic_over_stock": {
+     "lower95": 3.2349732409748366,
+     "ratio": 3.266722858419342
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.0166195219625531,
+     "ratio": 1.0344808523607385
+    },
+    "ours_over_stock": {
+     "lower95": 3.332769984885,
+     "ratio": 3.3793622470039497
+    },
+    "stock_over_anthropic": {
+     "lower95": 0.3035245823231142,
+     "ratio": 0.3061171832874327
+    },
+    "stock_over_ours": {
+     "lower95": 0.29204715946951537,
+     "ratio": 0.29591382246356474
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      21.438569,
+      21.420023,
+      21.841644,
+      22.182801,
+      21.553083
+     ],
+     "warmup_seconds": 21.279406
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      21.299805,
+      21.243987,
+      20.715777,
+      20.782032,
+      20.778474
+     ],
+     "warmup_seconds": 37.369088
+    },
+    "stock": {
+     "in_correctness_group": true,
+     "mode": "off",
+     "timed_seconds": [
+      71.036826,
+      69.899497,
+      71.697818,
+      70.843186,
+      70.733748
+     ],
+     "warmup_seconds": 72.763843
+    }
+   },
+   "requires": [],
+   "scope_id": "protenix_v1.h100.exact.040.0",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": [
+    {
+     "name": "protenix_v1 checkpoint",
+     "sha256": "2b7d5a8b30494514fc47fd2271a16260528cdba170ba09cc112fdecd8f85ec04",
+     "size": null
+    }
+   ]
+  },
+  {
+   "adapter": "ptx-cif-040",
+   "contract": "exact",
+   "correctness": {
+    "group_members": [
+     "stock",
+     "anthropic",
+     "ours"
+    ],
+    "note": "exact scopes: all three native outputs identical",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": true
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": [],
+    "stock": [
+     "anthropic",
+     "ours"
+    ]
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": null,
+    "torch": "2.13.0",
+    "triton": "3.7.1"
+   },
+   "evidence": {
+    "analysis": "ptx040-analysis.json",
+    "analysis_sha256": "6cf72117d15ac4da3d7390c0afc6a468ba1d25a7117d31f760fab79c84cc2f2c",
+    "plan_sha256": "874dca257296c4f5eadf11d7180a79826cc27ebe73af50d66f7d3e7921de7d92",
+    "raw_manifest": "ptx040-raw-manifest.json",
+    "raw_manifest_sha256": "009952477ccc65d5656d1bc199972d51cee26aeef08040f72859b601f3456ae9"
+   },
+   "example": {
+    "argv": [
+     "pred",
+     "--config",
+     "h100",
+     "--mode",
+     "exact",
+     "--det",
+     "1",
+     "--input",
+     "/results/protenix-v1-h100-040/c1-r1-ours-input.json",
+     "--out_dir",
+     "/results/protenix-v1-h100-040/c1-r1-ours",
+     "--seeds",
+     "4010017",
+     "--sample",
+     "1",
+     "--cycle",
+     "10",
+     "--step",
+     "200",
+     "--use_msa",
+     "true",
+     "--use_template",
+     "false"
+    ],
+    "input_paths": {
+     "/results/protenix-v1-h100-040/c1-r1-ours-input.json": "db7f2c4e562fddb44b1f8ac35823560d827e6ccd55a13447189a8ef69955e58d"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "040",
+   "gpu": "H100",
+   "kit": "protenix_v1",
+   "match": {
+    "input_sha256": "db7f2c4e562fddb44b1f8ac35823560d827e6ccd55a13447189a8ef69955e58d",
+    "options": {
+     "cycle": 10,
+     "det": 1,
+     "sample": 1,
+     "seeds": 4010017,
+     "step": 200,
+     "use_msa": "true",
+     "use_template": "false"
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.9659964443218915,
+     "ratio": 0.977630253840299
+    },
+    "anthropic_over_stock": {
+     "lower95": 2.712642854286881,
+     "ratio": 2.7448248423225667
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.0094998569471927,
+     "ratio": 1.0228816017833213
+    },
+    "ours_over_stock": {
+     "lower95": 2.780243784397311,
+     "ratio": 2.807630831329559
+    },
+    "stock_over_anthropic": {
+     "lower95": 0.36161163130751856,
+     "ratio": 0.36432197223697443
+    },
+    "stock_over_ours": {
+     "lower95": 0.35224878886908273,
+     "ratio": 0.35617218219763175
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      29.759992,
+      29.624663,
+      29.727648,
+      29.744211,
+      30.687515
+     ],
+     "warmup_seconds": 30.369619
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      29.088559,
+      28.489481,
+      29.215838,
+      29.889491,
+      29.521643
+     ],
+     "warmup_seconds": 31.756705
+    },
+    "stock": {
+     "in_correctness_group": true,
+     "mode": "off",
+     "timed_seconds": [
+      82.233863,
+      81.781954,
+      81.848245,
+      82.429653,
+      82.145375
+     ],
+     "warmup_seconds": 87.427231
+    }
+   },
+   "requires": [],
+   "scope_id": "protenix_v1.h100.exact.040.1",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": [
+    {
+     "name": "protenix_v1 checkpoint",
+     "sha256": "2b7d5a8b30494514fc47fd2271a16260528cdba170ba09cc112fdecd8f85ec04",
+     "size": null
+    }
+   ]
+  },
+  {
+   "adapter": "genie3-dispatch-050",
+   "contract": "exact",
+   "correctness": {
+    "group_members": [
+     "stock",
+     "anthropic",
+     "ours"
+    ],
+    "note": "exact scopes: all three native outputs identical",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": true
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": [],
+    "stock": [
+     "anthropic",
+     "ours"
+    ]
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": "3.10.13",
+    "torch": "2.7.1",
+    "triton": "3.3.1"
+   },
+   "evidence": {
+    "analysis": "genie050-analysis.json",
+    "analysis_sha256": "5fea7d69fdb31fdf7fda7291ab6adbf07d45d8b58a2ca9ee2e17d11e9a015a2a",
+    "plan_sha256": "7d69d9b02f4aaf28861f96be4611cc3c45892f4be4ca916c737b616b4b656a1a",
+    "raw_manifest": "genie050-raw-manifest.json",
+    "raw_manifest_sha256": "13ff059d3b2098ddbe87a9d6f53fb5e78aa6743d5428111ebf049fe87602ee1d"
+   },
+   "example": {
+    "argv": [
+     "design",
+     "--config",
+     "h100",
+     "--mode",
+     "exact",
+     "--input",
+     "/code/unconditional-224.yaml",
+     "--out_dir",
+     "/results/genie3-h100-050/c0-r1-ours",
+     "--det",
+     "1",
+     "--seed",
+     "5010013",
+     "--n",
+     "2",
+     "--batch_size",
+     "1"
+    ],
+    "input_paths": {
+     "/code/unconditional-224.yaml": "00fea41e4127c94b46858f8def24c27217d353794eeb2155994bb57da0861707"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "050",
+   "gpu": "H100",
+   "kit": "genie3",
+   "match": {
+    "input_sha256": "00fea41e4127c94b46858f8def24c27217d353794eeb2155994bb57da0861707",
+    "options": {
+     "batch_size": 1,
+     "det": 1,
+     "n": 2,
+     "seed": 5010013
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.8396696551560604,
+     "ratio": 0.8651749940314939
+    },
+    "anthropic_over_stock": {
+     "lower95": 1.4958318444035223,
+     "ratio": 1.543433197581865
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.1273653634746796,
+     "ratio": 1.1558355325785088
+    },
+    "ours_over_stock": {
+     "lower95": 1.7213134485666417,
+     "ratio": 1.7839549319263857
+    },
+    "stock_over_anthropic": {
+     "lower95": 0.6279504073796147,
+     "ratio": 0.6479062401707602
+    },
+    "stock_over_ours": {
+     "lower95": 0.5405456185449465,
+     "ratio": 0.5605522774727051
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      18.686878,
+      18.631583,
+      18.331117,
+      17.67119,
+      17.840616
+     ],
+     "warmup_seconds": 17.983146
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      15.50637,
+      15.420126,
+      16.631402,
+      15.638136,
+      15.684078
+     ],
+     "warmup_seconds": 15.3727
+    },
+    "stock": {
+     "in_correctness_group": true,
+     "mode": "off",
+     "timed_seconds": [
+      29.922754,
+      26.830409,
+      27.528715,
+      27.906772,
+      28.573662
+     ],
+     "warmup_seconds": 27.873284
+    }
+   },
+   "requires": [],
+   "scope_id": "genie3.h100.exact.050.0",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": [
+    {
+     "name": "step=600000.ckpt",
+     "sha256": "57039afcd4e5a66e58c52ba1ece256bc311a4294a31c37fca7301dd3a4c4479e",
+     "size": 346849270
+    },
+    {
+     "name": "config.yaml",
+     "sha256": "a01d7ad8b908e4380f45a11c8d691ccf27af3f50a9dfb209823ee99989a343e5",
+     "size": 772
+    }
+   ]
+  },
+  {
+   "adapter": "genie3-dispatch-050",
+   "contract": "exact",
+   "correctness": {
+    "group_members": [
+     "stock",
+     "anthropic",
+     "ours"
+    ],
+    "note": "exact scopes: all three native outputs identical",
+    "ours_output_equals_anthropic_every_repetition": true,
+    "stock_output_equals_anthropic_every_repetition": true
+   },
+   "decision": {
+    "provider": "ours",
+    "rule": "provider not beaten with 95% one-sided confidence by any other group member; ties go to anthropic, then stock, then ours",
+    "undominated": [
+     "ours"
+    ]
+   },
+   "dominated_by": {
+    "anthropic": [
+     "ours"
+    ],
+    "ours": [],
+    "stock": [
+     "anthropic",
+     "ours"
+    ]
+   },
+   "environment": {
+    "env_fixed": {},
+    "gpu_name": "NVIDIA H100 80GB HBM3",
+    "python": "3.10.13",
+    "torch": "2.7.1",
+    "triton": "3.3.1"
+   },
+   "evidence": {
+    "analysis": "genie050-analysis.json",
+    "analysis_sha256": "5fea7d69fdb31fdf7fda7291ab6adbf07d45d8b58a2ca9ee2e17d11e9a015a2a",
+    "plan_sha256": "7d69d9b02f4aaf28861f96be4611cc3c45892f4be4ca916c737b616b4b656a1a",
+    "raw_manifest": "genie050-raw-manifest.json",
+    "raw_manifest_sha256": "13ff059d3b2098ddbe87a9d6f53fb5e78aa6743d5428111ebf049fe87602ee1d"
+   },
+   "example": {
+    "argv": [
+     "design",
+     "--config",
+     "h100",
+     "--mode",
+     "exact",
+     "--input",
+     "/code/unconditional-256.yaml",
+     "--out_dir",
+     "/results/genie3-h100-050/c1-r1-ours",
+     "--det",
+     "1",
+     "--seed",
+     "5010017",
+     "--n",
+     "2",
+     "--batch_size",
+     "1"
+    ],
+    "input_paths": {
+     "/code/unconditional-256.yaml": "b69eeaac43355f65b9daa75ffa9c43414e7562f5c77f5bccacc6097bd8d08c1d"
+    },
+    "note": "recorded command of the 'ours' arm (mode as measured); used by tests and as a request template"
+   },
+   "experiment": "050",
+   "gpu": "H100",
+   "kit": "genie3",
+   "match": {
+    "input_sha256": "b69eeaac43355f65b9daa75ffa9c43414e7562f5c77f5bccacc6097bd8d08c1d",
+    "options": {
+     "batch_size": 1,
+     "det": 1,
+     "n": 2,
+     "seed": 5010017
+    }
+   },
+   "pairwise_ratio_slower_over_faster": {
+    "anthropic_over_ours": {
+     "lower95": 0.8691620073242503,
+     "ratio": 0.8871353661498902
+    },
+    "anthropic_over_stock": {
+     "lower95": 1.4699258903917174,
+     "ratio": 1.4878677685885509
+    },
+    "ours_over_anthropic": {
+     "lower95": 1.102368858311783,
+     "ratio": 1.1272236889167602
+    },
+    "ours_over_stock": {
+     "lower95": 1.651983116414568,
+     "ratio": 1.6771597947287349
+    },
+    "stock_over_anthropic": {
+     "lower95": 0.6642343029439203,
+     "ratio": 0.6721027372940801
+    },
+    "stock_over_ours": {
+     "lower95": 0.5875953655131813,
+     "ratio": 0.5962461079397272
+    }
+   },
+   "providers": {
+    "anthropic": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      19.608094,
+      19.771032,
+      19.574434,
+      19.832927,
+      19.348836
+     ],
+     "warmup_seconds": 19.69098
+    },
+    "ours": {
+     "in_correctness_group": true,
+     "mode": "exact",
+     "timed_seconds": [
+      17.156102,
+      17.272734,
+      18.189558,
+      16.99112,
+      17.471137
+     ],
+     "warmup_seconds": 17.20969
+    },
+    "stock": {
+     "in_correctness_group": true,
+     "mode": "off",
+     "timed_seconds": [
+      29.643715,
+      28.982677,
+      29.563424,
+      28.850541,
+      28.975934
+     ],
+     "warmup_seconds": 29.080542
+    }
+   },
+   "requires": [],
+   "scope_id": "genie3.h100.exact.050.1",
+   "validation": {
+    "holdout": null,
+    "status": "discovery-only"
+   },
+   "weights": [
+    {
+     "name": "step=600000.ckpt",
+     "sha256": "57039afcd4e5a66e58c52ba1ece256bc311a4294a31c37fca7301dd3a4c4479e",
+     "size": 346849270
+    },
+    {
+     "name": "config.yaml",
+     "sha256": "a01d7ad8b908e4380f45a11c8d691ccf27af3f50a9dfb209823ee99989a343e5",
+     "size": 772
+    }
+   ]
+  }
+ ],
+ "selection_rule": [
+  "A request is in scope only if kit, GPU, requested mode, input digest, every matched option, torch/triton versions, fixed environment variables and listed preconditions equal an evidence scope.",
+  "Within a scope the candidates are the providers whose outputs were identical to Anthropic's on every repetition (exact scopes: stock, anthropic, ours; fast scopes: anthropic, ours).",
+  "A candidate is dominated when another candidate is faster with 95% one-sided paired-bootstrap confidence (lower bound >= 1.0).",
+  "The chosen provider is the first undominated one in the order anthropic, stock, ours. A statistical tie therefore never selects our code.",
+  "Anything else -- unknown input, other seed, other GPU, other mode, unmatched environment -- selects anthropic with the requested mode unchanged."
+ ],
+ "status": "exact recorded inputs: discovery-frozen; family scopes: widened to the tested input-size hull after unseen-input holdouts (trimmed-mean rule); everything else routes to anthropic",
+ "upstream_commit": "f4f62fa6592ae4938d49b1757bea0cfeff9f468e"
+}

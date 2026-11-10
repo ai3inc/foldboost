@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "foldboost"
+version = "0.3.0"
+description = "Faster biomolecular inference on top of Anthropic's kit: a measured router, a resident server and byte-checked adapters"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+
+[project.urls]
+Homepage = "https://ai3discovery.com/research/foldboost-open-source-biomolecular-inference"
+Repository = "https://github.com/ai3inc/foldboost"
+
+[tool.setuptools.packages.find]
+include = ["foldboost*"]
+
+[tool.setuptools.package-data]
+foldboost = ["data/*.json", "data/adapters/*/*.py"]

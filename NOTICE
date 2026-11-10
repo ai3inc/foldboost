@@ -1,0 +1,16 @@
+FoldBoost
+Copyright 2026 AI3 and FoldBoost contributors
+
+FoldBoost builds on Anthropic's uplifting-biomolecular-modeling release:
+https://github.com/anthropics/uplifting-biomolecular-modeling
+commit f4f62fa6592ae4938d49b1757bea0cfeff9f468e
+Copyright 2026 Anthropic, PBC
+Licensed under the Apache License, Version 2.0; see LICENSE.
+
+The kits, their modes and the common runtime are Anthropic's work and are not
+redistributed here. FoldBoost's router, resident server and adapters call and
+wrap kit functions at run time; docs/kit-patches/ contains a proposed change to
+one upstream file (opt_core of3_transition), offered under the same license.
+
+FoldBoost is an independent project, not affiliated with or endorsed by
+Anthropic or NVIDIA. External dependencies keep their own licenses.

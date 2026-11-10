@@ -1,0 +1,221 @@
+{
+  "schema": "flashpair-hybrid-holdout-plan/1",
+  "frozen_utc": "2026-11-09T15:10:00Z",
+  "purpose": "Test whether the candidate adapters keep their measured advantage over Anthropic's mode on inputs that were never used to select or tune them, so the router may be widened from exact recorded inputs to the tested input family. Written before any holdout measurement.",
+  "policy_under_test": "flashpair_hybrid/data/policy-v1.json (discovery-frozen)",
+  "hardware": "NVIDIA H100 80GB HBM3, RunPod SECURE cloud, one GPU per pod, the CUDA 12.6.3 runtime image used in the discovery runs",
+  "protocol": {
+    "arms": [
+      "stock",
+      "anthropic",
+      "ours"
+    ],
+    "stock_mode": "off",
+    "anthropic_and_ours_mode": "the kit's contract mode (exact or fast) exactly as in the discovery scope",
+    "repetitions": "6 fresh CLI processes per arm and input; repetition 0 is an excluded warmup, repetitions 1-5 are timed",
+    "arm_order": "shuffled within every repetition with a seed fixed in the per-tool plan before the run",
+    "environment": "the pinned original stack of the discovery scope, installed from the kit's own lock; no versions changed",
+    "harness": "the discovery harness of the same tool (bundle-0NN benchmark script), changed only in its PLAN conditions, input files and the bookkeeping those require. Every harness edit is listed in the tool's result folder before the run starts.",
+    "inputs": "never used in selection, tuning or any earlier measurement; fixed below; no input may be dropped or replaced after the first holdout measurement of its tool, and a failed or excluded input is reported as failed"
+  },
+  "gates_per_input": {
+    "outputs": "every native output of ours equals Anthropic's on every repetition under the same comparison the discovery harness used (bytes, or arrays where the discovery used arrays); exact scopes additionally require stock equal; fast scopes never compare against stock",
+    "activation": "our adapter reports candidate calls > 0 on every repetition of its arm and 0 audit lines on the other arms",
+    "speed": "one-sided 95% lower bound of the paired geometric-mean ratio Anthropic seconds / our seconds >= 1.0 (10000 bootstrap resamples of the 5 timed repetitions, seed fixed per tool)",
+    "three_way": "all pairwise bounds are computed; the router rule of the policy (undominated candidates, order anthropic, stock, ours) is applied to each input and reported"
+  },
+  "acceptance_per_kit": {
+    "accepted": "every holdout input of the kit passes the output, activation and speed gates. The router may then send any request of that kit/GPU/mode/stack whose input lies inside the hull of all tested inputs (discovery plus holdout) to the provider the three-way rule selects.",
+    "rejected": "any input fails a gate. The kit stays on exact recorded inputs only; failures are published with the same prominence as passes.",
+    "no_multiplicity_correction": "each gate is evaluated on its own; kit acceptance is the conjunction, so it is stricter than any single gate. Five timed repetitions per arm remain a small sample and the result is conditional on this host class."
+  },
+  "tools": {
+    "genie3": {
+      "scope": "exact, adapter genie3-dispatch-050",
+      "inputs": "unconditional design at lengths 192, 240, 288 (yaml identical to the discovery template except min_length and max_length)",
+      "seeds": [
+        7010013,
+        7010017,
+        7010023
+      ],
+      "options": "n 2, batch_size 1, det 1, steps as the discovery config",
+      "arm_order_seed": 7010101,
+      "bootstrap_seed": 7010043
+    },
+    "proteinmpnn": {
+      "scope": "exact, adapter mpnn-triton-key-036, warm fingerprint cache",
+      "inputs": "all PDB files of the pinned ProteinMPNN checkout directory inputs/PDB_monomers/pdbs (directory digest recorded at run time)",
+      "conditions": [
+        {
+          "sequences": 4,
+          "seed": 7110013
+        },
+        {
+          "sequences": 12,
+          "seed": 7110017
+        },
+        {
+          "sequences": 24,
+          "seed": 7110023
+        }
+      ],
+      "options": "batch_size 8, save_score 1, save_probs 0",
+      "arm_order_seed": 7110101,
+      "bootstrap_seed": 7110043
+    },
+    "esm_if1": {
+      "scope": "fast, adapter esmif1-mmap-039; stock is unseeded and is not in the correctness group",
+      "inputs": "public RCSB entries 1UBQ chain A, 2LZM chain A, 1TIM chain A (files downloaded once, digests recorded before the first run)",
+      "seeds": [
+        7310013,
+        7310017,
+        7310023
+      ],
+      "options": "num_samples 2, batch_size 2",
+      "arm_order_seed": 7310101,
+      "bootstrap_seed": 7310043
+    },
+    "openfold3": {
+      "scope": "fast and exact, adapter of3-inline-023",
+      "inputs": "public ubiquitin sequence as 4 and 12 identical chains (304 and 912 tokens), both modes",
+      "seeds": [
+        7210013,
+        7210017
+      ],
+      "options": "as the discovery harness: det 1, no MSA server, no templates, 1 diffusion sample",
+      "arm_order_seed": 7210101,
+      "bootstrap_seed": 7210043
+    },
+    "openfold3_ob0": {
+      "scope": "fast, adapter ob0-inline-021",
+      "inputs": "public ubiquitin sequence as 3 and 9 identical chains (228 and 684 tokens)",
+      "seeds": [
+        7220013,
+        7220017
+      ],
+      "options": "as the discovery harness",
+      "arm_order_seed": 7220101,
+      "bootstrap_seed": 7220043
+    },
+    "boltz2": {
+      "scope": "fast, adapter boltz-mmap-031",
+      "inputs": "the first three YAML files, in sorted order, of the kit's inputs directory other than the two discovery inputs, restricted to at most 700 tokens; the list is written to the result folder before the first run",
+      "seeds": [
+        7410013,
+        7410017,
+        7410023
+      ],
+      "arm_order_seed": 7410101,
+      "bootstrap_seed": 7410043
+    },
+    "protenix_v1": {
+      "scope": "exact, adapter ptx-cif-040",
+      "inputs": "the discovery JSON template at 1, 3 and 5 chain copies",
+      "seeds": [
+        7510013,
+        7510017,
+        7510023
+      ],
+      "arm_order_seed": 7510101,
+      "bootstrap_seed": 7510043
+    },
+    "atlasfold": {
+      "scope": "exact, adapter atlas-mmap-037; the three-way rule is applied separately because stock tied ours at 228 tokens",
+      "inputs": "ubiquitin repeated 2, 5 and 6 times (152, 380, 456 tokens)",
+      "seeds": [
+        7610013,
+        7610017,
+        7610023
+      ],
+      "arm_order_seed": 7610101,
+      "bootstrap_seed": 7610043
+    }
+  },
+  "reporting": "Per-input table of all three providers' seconds, pairwise bounds, equality, activation and the rule's choice; failures and exclusions listed; raw records, logs and a sha256 manifest kept immutable next to the analysis; no statement about other GPUs, other stacks, other inputs families or prepared-model latency.",
+  "amendments": [
+    {
+      "id": "b300-openfold3-first-records",
+      "frozen_utc": "2026-11-09T15:40:00Z",
+      "purpose": "The Anthropic openfold3 kit ships configs/b300.env stating 'Records on this card: none yet'. Measure stock, Anthropic and our adapter whole-CLI on one B300 for the discovery inputs, so the router has a B300 row based on measurement. This is first evidence on a new card, not a holdout: the adapter was validated only on H100.",
+      "hardware": "onpod B300 SXM6 AC (sm_103), spot, driver 580.126.09, nvidia/cuda 12.9.1 devel image",
+      "stack": "the kit's own pinned stack from environment/requirements.lock (python 3.11.5, torch 2.10.0+cu128, triton 3.6.0); DS4Sci op compiled for 10.3 only",
+      "scopes": [
+        {
+          "kit": "openfold3",
+          "tier": "fast",
+          "copies": [
+            8,
+            9
+          ],
+          "seeds": [
+            2310013,
+            2310017
+          ]
+        },
+        {
+          "kit": "openfold3",
+          "tier": "exact",
+          "copies": [
+            10,
+            11
+          ],
+          "seeds": [
+            3010013,
+            3010017
+          ]
+        }
+      ],
+      "options": "--det 1 --config b300, no MSA server, no templates, 1 diffusion sample (as the H100 discovery harness)",
+      "protocol": "identical to the plan protocol: 6 fresh CLI per arm and input, repetition 0 excluded, shuffled arm order (order seed 7810101 + tier offset 0 fast / 100 exact), bootstrap seed 7810043, same four gates; the adapter is exposed through the hybrid interpreter gate (vendored byte-identical files)",
+      "claim_limit": "one B300 host, one pinned stack, these four inputs; no statement about other cards or inputs; an unmeasured input is routed to Anthropic"
+    },
+    {
+      "id": "resident-process-openfold3",
+      "frozen_utc": "2026-11-09T17:20:00Z",
+      "purpose": "Measure request latency of Anthropic's own OpenFold3 exact mode when the kit's CLI function is called repeatedly inside one resident process (flashpair_hybrid.serve_kit), against fresh CLI processes of the same mode on the same host. The model code, levers and arguments are the kit's; the only change is that Python, CUDA and lever initialisation are paid once.",
+      "hardware": "onpod B300 SXM6 AC (spot), pinned kit stack; H100 repetition follows on a RunPod H100 when a pod is free",
+      "inputs": "public ubiquitin sequence as 8, 10 and 12 identical chains (608, 760 and 912 tokens), --det 1, exact mode, seed 2310013, no MSA server, no templates, 1 diffusion sample",
+      "design": "(1) fresh reference: 6 fresh CLI processes per input in shuffled order (repetition 0 excluded), outputs fingerprinted; (2) one resident server started with the 608-token request (excluded as the first request), then 30 requests with the three inputs in a shuffled order fixed by seed 7910101, each sent through the client; latency is the client's wall time; after every request nvidia-smi memory.used and the output fingerprint are recorded",
+      "gates": {
+        "outputs": "every resident output (CIF and confidence JSONs) is byte-identical to the fresh reference of the same input",
+        "exit": "every resident request returns 0 and no request is refused",
+        "memory": "GPU memory used after the last request is at most 5% above the value after the 10th request (no accumulating leak)",
+        "speed": "for each input, bootstrap (10000 resamples, seed 7910043, independent resampling of the 5 fresh and all resident timings) one-sided 95% lower bound of mean(fresh seconds) / mean(resident seconds) >= 1.0"
+      },
+      "claim_limit": "latency of the 2nd and later requests in a resident process versus a fresh CLI, one host, three inputs, exact mode; not a whole-CLI speedup, not prepared-model forward time, not comparable with the whole-CLI rows of the hybrid table",
+      "second_stage": "resident process + our inline-worker adapter versus resident process alone, same gates, only if stage one passes"
+    },
+    {
+      "id": "resident-process-other-kits",
+      "frozen_utc": "2026-11-10T00:55:00Z",
+      "purpose": "Repeat the resident-process validation of the openfold3 amendment for the other kits whose benchmark environments exist, on H100. Written before any of these measurements; the openfold3 result on B300 (all gates passed) is the only prior evidence.",
+      "kits": [
+        "genie3",
+        "proteinmpnn",
+        "esm_if1",
+        "boltz2",
+        "protenix_v1",
+        "atlasfold",
+        "openfold3_ob0",
+        "openfold3 (H100 repetition, exact and fast)"
+      ],
+      "inputs": "the three (two for openfold3_ob0) holdout inputs frozen in this plan for the kit; mode = the kit's contract mode in the plan (exact or fast); options and seeds as frozen for the holdout",
+      "design": "as resident-process-openfold3: 6 fresh CLI processes per input in shuffled order (the first executed per input excluded), one resident server started with the first input's request (excluded), 30 requests over the inputs in a shuffled order (seed = the kit's arm-order seed + 1), latency is the client's wall time, fingerprint and GPU memory after every request",
+      "gates": "identical to resident-process-openfold3 (outputs byte-identical to the fresh reference of the same input; every request rc 0 and none refused; GPU memory after the last request at most 5% above that after the 10th; per-input bootstrap lower bound of fresh/resident >= 1.0 with the kit's bootstrap seed + 2)",
+      "kit_that_cannot_be_served": "If a kit's run.sh does not end in a single `exec python -m <pkg>`, the package has no __main__.main(argv), or two consecutive requests of the same input differ in any output byte, the kit is reported as not supported by resident mode with the evidence; that is a result, not a gate failure to repair afterwards. The router then never sends that kit to a resident process.",
+      "claim_limit": "request latency of the 2nd and later requests versus a fresh CLI of the same mode, one host class, the frozen inputs; no whole-CLI claim"
+    },
+    {
+      "id": "owner-verdict-rule-change-trimmed-mean",
+      "recorded_utc": "2026-11-10T00:30:00Z",
+      "what_changed": "The headline verdict of every speed gate became: ratio of trimmed means (fastest and slowest timed run of each arm dropped) > 1, replacing the pre-registered 'one-sided 95% bootstrap lower bound >= 1 over five repetitions'. The three-way choice on holdout inputs uses trimmed means with a 2% margin (X dominates Y when trimmed mean(Y)/trimmed mean(X) >= 1.02).",
+      "why": "The genie3 length-288 holdout input had one 58 s stalled repetition of our arm (and a 61 s stall of the stock arm at the same length); the model sections inside the same log were normal. Under the pre-registered rule that input failed and, by the conjunction rule, so did the kit. The owner decided that a single stall must not decide a verdict.",
+      "timing": "decided AFTER seeing the genie3 result, so it is a post-hoc rule change made by the owner. Every report shows the pre-registered verdict beside the trimmed one; genie3 is the only kit whose verdict differs (original: rejected, trimmed: accepted).",
+      "scope": "applies to holdout and resident-process gates; exact-input discovery scopes keep their original bounds."
+    },
+    {
+      "id": "deviations-recorded-before-measurement",
+      "note": "proteinmpnn: the frozen condition '4 sequences, batch 8' is refused by the kit's exact mode (4 // 8 = 0 batches); 8 sequences were used instead (work/holdout/proteinmpnn/DEVIATIONS.md). boltz2: the frozen rule selected only two eligible inputs (199 and 398 tokens). Full lists are in each tool's DEVIATIONS.md under work/holdout."
+    }
+  ]
+}

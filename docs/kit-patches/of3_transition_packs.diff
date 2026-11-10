@@ -1,0 +1,25 @@
+--- a/opt/openfold3_opt/of3_transition.py	2026-11-10 13:56:33
++++ b/opt/openfold3_opt/of3_transition.py	2026-11-10 13:56:33
+@@ -30,6 +30,7 @@
+ from __future__ import annotations
+ 
+ import math
++import weakref
+ import sys
+ import threading
+ from typing import Any, Dict
+@@ -111,7 +112,13 @@
+                     ln_w=(ln.weight.detach() if getattr(ln, "weight", None) is not None else None),
+                     ln_b=(ln.bias.detach() if getattr(ln, "bias", None) is not None else None),
+                     eps=float(getattr(ln, "eps", 1e-5)), device=device)
+-    _PACKS[id(module)] = (W, str(device), ver)
++    key = id(module)
++    _PACKS[key] = (W, str(device), ver)
++    if not module.__dict__.get("_of3_transition_pack_finalizer"):
++        # one pack per module for the module's lifetime, no longer: a process that builds a new model per request (a resident server) would otherwise keep every
++        # earlier model's packs for ever. The finalizer runs when the module dies, before its id can be reused (the core's trimul cache does the same on its owner tensor).
++        weakref.finalize(module, _PACKS.pop, key, None)
++        module.__dict__["_of3_transition_pack_finalizer"] = True
+     return W
+ 
+ 

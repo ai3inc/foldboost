@@ -1,0 +1,115 @@
+{
+  "atlas-mmap-037": {
+    "env_flag": "FLASHP_ATLAS_MMAP",
+    "files": {
+      "flashpair_bootstrap.py": "f6aa56ab16001c31b49f76b35d5545ea86971fd6105c3ba9096b98195e96523b",
+      "mmap_loader.py": "29a0da189441904f47d92dc1310b792a10377726143e3b86248ebec826a7a12e"
+    },
+    "kits": [
+      "atlasfold"
+    ],
+    "source_bundle": "bundle-037",
+    "validated_by": [
+      "037"
+    ]
+  },
+  "boltz-mmap-031": {
+    "env_flag": "FLASHP_BOLTZ_MMAP",
+    "files": {
+      "flashpair_bootstrap.py": "964fe9dacc40017fb945e754b679623b1f3713b2973a90d12fdccfb6fcc498af",
+      "mmap_loader.py": "29a0da189441904f47d92dc1310b792a10377726143e3b86248ebec826a7a12e"
+    },
+    "kits": [
+      "boltz2"
+    ],
+    "source_bundle": "bundle-031",
+    "validated_by": [
+      "031"
+    ]
+  },
+  "esmif1-mmap-039": {
+    "env_flag": "FLASHP_ESMIF1_MMAP",
+    "files": {
+      "flashpair_bootstrap.py": "1e84a756a60903cca401269ac05ec5d9fcd9ed7c2c0fa12b787cf6d4f33300c8",
+      "mmap_loader.py": "29a0da189441904f47d92dc1310b792a10377726143e3b86248ebec826a7a12e"
+    },
+    "kits": [
+      "esm_if1"
+    ],
+    "source_bundle": "bundle-039",
+    "validated_by": [
+      "039"
+    ]
+  },
+  "genie3-dispatch-050": {
+    "env_flag": "FLASHP_GENIE3_DISPATCH",
+    "files": {
+      "dispatch_loader.py": "4285eeb88dce2d73728ac191367b28afb979b875cf23536151f3603b7ed38d16",
+      "flashpair_bootstrap.py": "39a0045a8f0a295677515e616097a499c8317bb56d7ff72797fa5688a92ccfd9"
+    },
+    "kits": [
+      "genie3"
+    ],
+    "source_bundle": "bundle-050",
+    "validated_by": [
+      "050"
+    ]
+  },
+  "mpnn-triton-key-036": {
+    "env_flag": "FLASHP_MPNN036",
+    "files": {
+      "cached_key.py": "5554c442f9321fcc16d4b9d858f52d05a3e53c6484f14d27cc7bc9dc666c500b",
+      "flashpair_bootstrap.py": "d6660253a02a23722e643dc0e4bb131cbcdd9e3c9c7c914797d8502476b238ed"
+    },
+    "kits": [
+      "proteinmpnn"
+    ],
+    "source_bundle": "bundle-036",
+    "validated_by": [
+      "036"
+    ]
+  },
+  "ob0-inline-021": {
+    "env_flag": "FLASHP_INLINE_WORKER",
+    "files": {
+      "flashpair_bootstrap.py": "1259f801282ae69334d9dc32443be3e3d95a6e0cef0ae77d7e7fa574bf42aa3a",
+      "inline_loader.py": "c9155eac68abc5cf8819a4dd87f975d236d2d66d21fc791db3a54961a4e436aa"
+    },
+    "kits": [
+      "openfold3_ob0"
+    ],
+    "source_bundle": "bundle-022",
+    "validated_by": [
+      "022"
+    ]
+  },
+  "of3-inline-023": {
+    "env_flag": "FLASHP_INLINE_WORKER",
+    "files": {
+      "flashpair_bootstrap.py": "63724a86fcf1bb5b7dd3821e6c3cb3c855bc9ee28bc79f1534dd02b5e0adf082",
+      "inline_loader.py": "edacc141d275cc838fd9860711cbfe75ae623a16c8d4c52ced9df3771ed9cf5f"
+    },
+    "kits": [
+      "openfold3"
+    ],
+    "source_bundle": "bundle-027",
+    "validated_by": [
+      "027",
+      "030"
+    ]
+  },
+  "ptx-cif-040": {
+    "env_flag": "FLASHP_PTX_CIF",
+    "files": {
+      "cif_index.py": "1148783ea78c42431b295252d6014422cff61b3b280c71fa1da3a18389d80fc7",
+      "flashpair_bootstrap.py": "544ad121ea51ba921305c24b9f1a685d8e0578386115505f086ec9ba926fcd89"
+    },
+    "kits": [
+      "protenix_v1"
+    ],
+    "source_bundle": "bundle-040",
+    "validated_by": [
+      "040"
+    ]
+  }
+}
